@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "id": "erp-vendor-kingdee-k3",
+    "name": "金蝶云·星空（AI星空）",
+    "parentModelId": "common-erp",
+    "vendor": "金蝶软件（中国）有限公司",
+    "product": "金蝶云·星空 V9.1（AI星空）",
+    "version": "1.0.0",
+    "updatedAt": "2026-01-28",
+    "freshness": {
+      "createdAt": "2026-01-28",
+      "lastReviewedAt": "2026-01-28",
+      "nextReviewDate": "2026-07-28",
+      "confidence": "high",
+      "dataSource": "金蝶官网产品页、V9.1发布公告、公开产品手册"
+    }
+  },
+
+  "overview": {
+    "fullName": "金蝶云·星空（AI星空）",
+    "latestVersion": "V9.1",
+    "platform": "苍穹PaaS平台（云原生、微服务架构）",
+    "positioning": "面向中大型成长型企业的智能云ERP，连续21年中国成长型企业应用软件市场占有率第一",
+    "customerBase": "4.6万+企业客户",
+    "deploymentOptions": ["公有云SaaS", "私有云", "混合云"],
+    "techStack": {
+      "architecture": "云原生、微服务",
+      "platform": "苍穹PaaS",
+      "database": "支持多数据库（含国产数据库）",
+      "mobile": "移动端支持",
+      "ai": "大模型驱动（BOSS助理、智能财报、智能预警）",
+      "lowCode": "苍穹低代码开发平台",
+      "domesticAdaptation": "全国产化适配（信创）"
+    }
+  },
+
+  "productEditions": [
+    {
+      "name": "星空标准版",
+      "target": "中型企业",
+      "modules": "财务+供应链基础模块",
+      "priceRange": "每人每年600-800元（SaaS）"
+    },
+    {
+      "name": "星空专业版",
+      "target": "中大型企业",
+      "modules": "全模块",
+      "priceRange": "每人每年800-1380元（SaaS）"
+    },
+    {
+      "name": "星空旗舰版",
+      "target": "大型集团企业",
+      "modules": "全模块 + 高级功能",
+      "priceRange": "项目制 30-100万+"
+    }
+  ],
+
+  "moduleMapping": {
+    "description": "金蝶星空模块与通用ERP元模型模块的映射关系",
+    "mapping": [
+      {
+        "genericModuleId": "financial-accounting",
+        "vendorModuleName": "智能财务",
+        "vendorSubModules": ["总账", "应收款管理", "应付款管理", "固定资产", "出纳管理", "存货核算", "合并报表", "智能会计平台"],
+        "vendorSpecificFeatures": [
+          "智能会计平台：自动凭证生成、智能结账、电子会计档案",
+          "银企互联：直连银行系统，自动收付款和对账",
+          "暂估应收/业务应收两种立账模式",
+          "多会计政策并行处理"
+        ]
+      },
+      {
+        "genericModuleId": "cost-management",
+        "vendorModuleName": "成本管理",
+        "vendorSubModules": ["产品成本核算", "费用分配", "成本分析"],
+        "vendorSpecificFeatures": [
+          "支持实际成本法与标准成本法并行",
+          "支持按产品/订单/项目多维度成本归集"
+        ]
+      },
+      {
+        "genericModuleId": "management-accounting",
+        "vendorModuleName": "管理会计",
+        "vendorSubModules": ["预算管理", "利润中心", "资金管理", "税务管理"],
+        "vendorSpecificFeatures": [
+          "税企直连、智能算税、合规自动申报",
+          "资金计划与银企互联深度集成"
+        ]
+      },
+      {
+        "genericModuleId": "procurement-management",
+        "vendorModuleName": "采购管理",
+        "vendorSubModules": ["采购申请", "采购订单", "采购入库", "采购退货", "采购发票", "采购价格", "货源清单"],
+        "vendorSpecificFeatures": [
+          "采购交货计划与付款计划",
+          "VMI供应商管理库存深度支持",
+          "与供应商协同平台无缝对接"
+        ]
+      },
+      {
+        "genericModuleId": "sales-management",
+        "vendorModuleName": "销售管理",
+        "vendorSubModules": ["销售订单", "销售发货", "销售退货", "销售发票", "销售价格", "信用管理"],
+        "vendorSpecificFeatures": [
+          "信用管理体系（信用额度、信用检查、信用报告）",
+          "支持集中销售与分散销售模式切换"
+        ]
+      },
+      {
+        "genericModuleId": "inventory-management",
+        "vendorModuleName": "库存管理",
+        "vendorSubModules": ["入库管理", "出库管理", "调拨管理", "盘点管理", "库存预警", "条码管理"],
+        "vendorSpecificFeatures": [
+          "多维度库存管理（批号、有效期、货主、保管者、库存状态）",
+          "条码打印+PDA扫码全流程移动作业",
+          "库存即时查询（多维度实时查库存）"
+        ]
+      },
+      {
+        "genericModuleId": "interorg-settlement",
+        "vendorModuleName": "组织间结算",
+        "vendorSubModules": ["组织间采购", "组织间销售", "组织间调拨", "内部转移定价"],
+        "vendorSpecificFeatures": [
+          "支持多种结算模式（按订单、按调拨、按期间）",
+          "内部交易自动匹配与对账"
+        ]
+      },
+      {
+        "genericModuleId": "production-management",
+        "vendorModuleName": "生产管理",
+        "vendorSubModules": ["BOM管理", "工艺路线", "生产订单", "MPS/MRP", "生产领料", "生产报工", "委外加工"],
+        "vendorSpecificFeatures": [
+          "配置BOM支持（可配置产品、选配件）",
+          "MRP自动生成采购申请和生产订单",
+          "返工返修管理",
+          "销售订单直接下推生产订单"
+        ]
+      },
+      {
+        "genericModuleId": "quality-management",
+        "vendorModuleName": "质量管理",
+        "vendorSubModules": ["来料检验IQC", "过程检验IPQC", "成品检验FQC/OQC", "检验方案", "不合格品处理"],
+        "vendorSpecificFeatures": [
+          "检验方案与抽样规则灵活配置",
+          "质量追溯链（从原料到成品）"
+        ]
+      },
+      {
+        "genericModuleId": "supplier-collaboration",
+        "vendorModuleName": "供应商协同平台",
+        "vendorSubModules": ["询报价协同", "订单协同", "交货协同", "库存协同", "信息协同"],
+        "vendorSpecificFeatures": [
+          "供应商门户（独立登录界面）",
+          "ASN预先发货通知",
+          "供应商交货及时率自动统计"
+        ]
+      },
+      {
+        "genericModuleId": "plm",
+        "vendorModuleName": "PLM产品生命周期管理",
+        "vendorSubModules": ["产品数据管理", "研发项目管理", "BOM协同", "工程变更ECN/ECO"],
+        "vendorSpecificFeatures": [
+          "PLM+ERP一体化（设计BOM自动转制造BOM）",
+          "研发成本实时归集到ERP成本核算"
+        ]
+      },
+      {
+        "genericModuleId": "expense-reimbursement",
+        "vendorModuleName": "费用报销",
+        "vendorSubModules": ["费用申请", "差旅报销", "费用报销单", "借还款"],
+        "vendorSpecificFeatures": [
+          "发票OCR识别+自动验真",
+          "与金蝶我家云、微信/钉钉审批集成"
+        ]
+      },
+      {
+        "genericModuleId": "data-analytics",
+        "vendorModuleName": "数据分析与BI",
+        "vendorSubModules": ["经营驾驶舱", "自定义报表", "移动报表"],
+        "vendorSpecificFeatures": [
+          "AI智能分析（BOSS助理，自然语言查数据）",
+          "智能预警（异常指标主动推送）",
+          "拖拽式报表设计器"
+        ]
+      },
+      {
+        "genericModuleId": "multi-org",
+        "vendorModuleName": "多组织管理",
+        "vendorSubModules": ["组织架构", "分级授权", "主数据管理", "集团报表"],
+        "vendorSpecificFeatures": [
+          "支持法人、事业部、利润中心多层组织架构",
+          "组织间业务规则灵活配置"
+        ]
+      }
+    ]
+  },
+
+  "strengths": [
+    "连续21年中国成长型企业应用软件市场占有率第一",
+    "基于云原生架构（苍穹平台），支持全国产化适配（信创）",
+    "AI深度融合（BOSS助理、智能财报、智能预警），大模型驱动",
+    "PLM+ERP+MES一体化，研产供销服全打通",
+    "低代码平台（苍穹），可快速定制业务应用",
+    "服务4.6万+企业客户，行业案例丰富",
+    "SaaS模式持续升级，无需本地运维"
+  ],
+
+  "weaknesses": [
+    "大型企业复杂场景能力不如SAP",
+    "国际化能力相对有限，海外市场覆盖不足",
+    "部分高级功能（集团管控、高级计划排程）需旗舰版",
+    "生态合作伙伴质量参差不齐，实施水平差异大",
+    "定价体系复杂，不同版本功能差异大"
+  ],
+
+  "pricing": {
+    "model": "SaaS订阅制 + 项目制",
+    "saas": {
+      "standard": "每人每年600-800元",
+      "professional": "每人每年800-1380元"
+    },
+    "project": {
+      "range": "10-100万+",
+      "includes": "软件授权+实施服务+定制开发",
+      "maintenance": "年维护费15-20%"
+    }
+  },
+
+  "targetCustomer": {
+    "scale": "中大型成长型企业，年收入1亿-100亿",
+    "industries": ["制造业（离散、流程）", "高科技", "汽车零部件", "食品饮料", "医药", "批发零售"],
+    "characteristics": [
+      "处于快速成长期，业务规模扩张",
+      "有信创或国产化需求",
+      "需要业财一体化",
+      "多组织多法人管控需求",
+      "对AI和数字化转型有需求"
+    ]
+  },
+
+  "competitiveComparison": {
+    "vsYonyouU9": {
+      "advantage": "云原生架构更先进、AI能力更强、SaaS模式更成熟、用户体验更好",
+      "disadvantage": "用友在大型集团管控和国央企市场根基更深"
+    },
+    "vsSAP": {
+      "advantage": "价格低5-10倍、实施周期短、中国本地化更好、信创适配、AI能力领先",
+      "disadvantage": "大型跨国企业复杂场景不如SAP、全球化能力不足、行业最佳实践积累少于SAP"
+    },
+    "vsInspur": {
+      "advantage": "产品迭代快、AI能力强、市场化企业认可度高、生态更开放",
+      "disadvantage": "国央企市场和政府资源不如浪潮"
+    }
+  }
+}

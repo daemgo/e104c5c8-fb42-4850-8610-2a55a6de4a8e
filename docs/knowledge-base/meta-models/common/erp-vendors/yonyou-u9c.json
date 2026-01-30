@@ -1,0 +1,384 @@
+{
+  "meta": {
+    "id": "erp-vendor-yonyou-u9c",
+    "name": "用友U9 Cloud",
+    "parentModelId": "common-erp",
+    "vendor": "用友网络科技股份有限公司",
+    "product": "用友U9 Cloud 2025版",
+    "version": "1.0.0",
+    "updatedAt": "2026-01-28",
+    "freshness": {
+      "createdAt": "2026-01-28",
+      "lastReviewedAt": "2026-01-28",
+      "nextReviewDate": "2026-07-28",
+      "confidence": "high",
+      "dataSource": "用友U9 Cloud官网、2025新版发布资料、行业分析报告、公开产品文档"
+    }
+  },
+
+  "overview": {
+    "fullName": "用友U9 Cloud（数智制造创新平台）",
+    "latestVersion": "2025版",
+    "platform": "SOA云架构，基于用友BIP技术底座",
+    "positioning": "面向中型及中大型离散制造企业的云ERP，自2008年诞生以来持续深耕制造业，从企业管理软件演进为数智制造创新平台",
+    "customerBase": "数千家制造业企业客户",
+    "deploymentOptions": ["公有云", "私有云", "混合云"],
+    "techStack": {
+      "architecture": "SOA云架构，支持多组织、多工厂协同",
+      "platform": "用友BIP iuap底座",
+      "database": "支持多数据库（Oracle、SQL Server、国产数据库）",
+      "mobile": "移动端支持，PDA车间采集",
+      "ai": "接入DeepSeek、智谱等大模型，支持智能工艺、智能合同、智能变更等场景化AI",
+      "lowCode": "支持用友低代码扩展",
+      "domesticAdaptation": "信创适配，支持国产化部署"
+    }
+  },
+
+  "productEditions": [
+    {
+      "name": "U9 Cloud 标准版",
+      "target": "中型制造企业，单工厂",
+      "modules": "财务+供应链+生产基础模块",
+      "priceRange": "15-40万（项目制）"
+    },
+    {
+      "name": "U9 Cloud 企业版",
+      "target": "中大型制造企业，多工厂协同",
+      "modules": "全模块 + 多组织 + APS排程",
+      "priceRange": "40-120万（项目制）"
+    },
+    {
+      "name": "U9 Cloud 行业版",
+      "target": "特定行业深度定制（装备制造、汽车零部件、IC设计等）",
+      "modules": "全模块 + 行业实践套件",
+      "priceRange": "60-200万+（项目制）"
+    }
+  ],
+
+  "moduleMapping": {
+    "description": "用友U9 Cloud模块与通用ERP元模型模块的映射关系",
+    "mapping": [
+      {
+        "genericModuleId": "financial-accounting",
+        "vendorModuleName": "财务会计",
+        "vendorSubModules": ["总账", "应收管理", "应付管理", "固定资产", "出纳管理", "存货核算", "合并报表"],
+        "vendorSpecificFeatures": [
+          "多会计准则并行（中国准则、IFRS等），支持海外子公司本地合规",
+          "多币种处理与汇率自动更新",
+          "跨国企业关务核销自动化",
+          "业务凭证自动生成，支持实时记账"
+        ]
+      },
+      {
+        "genericModuleId": "cost-management",
+        "vendorModuleName": "成本管理",
+        "vendorSubModules": ["产品成本核算", "实际成本", "标准成本", "项目成本", "多维成本分析"],
+        "vendorSpecificFeatures": [
+          "实时成本核算：成本计算颗粒度从月结提升至工单级别",
+          "支持按工序、按设备、按班次等多维度成本分析，效率较传统方法提升15倍",
+          "多成本核算体系并行，支持阿米巴责任考核模式",
+          "项目化制造成本归集，按项目维度精确核算"
+        ]
+      },
+      {
+        "genericModuleId": "management-accounting",
+        "vendorModuleName": "管理会计",
+        "vendorSubModules": ["预算管理", "利润中心", "阿米巴考核", "资金管理", "税务管理"],
+        "vendorSpecificFeatures": [
+          "阿米巴经营模式原生支持，责任中心独立核算",
+          "多维度经营分析（按产品线、客户群、区域等）",
+          "多税制支持（中国税制、越南税制、泰国税制等）"
+        ]
+      },
+      {
+        "genericModuleId": "procurement-management",
+        "vendorModuleName": "采购管理",
+        "vendorSubModules": ["采购申请", "采购订单", "采购入库", "采购退货", "采购发票", "采购价格", "货源清单"],
+        "vendorSpecificFeatures": [
+          "MRP自动驱动采购申请生成",
+          "供应链协同平台实现供应商在线对账、在线送货",
+          "区块链交易数据确保不可篡改",
+          "采购订单、物流信息与质检结果自动匹配"
+        ]
+      },
+      {
+        "genericModuleId": "sales-management",
+        "vendorModuleName": "销售管理",
+        "vendorSubModules": ["销售订单", "销售发货", "销售退货", "销售发票", "销售价格", "信用管理"],
+        "vendorSpecificFeatures": [
+          "个性化定制模式支持（选配报价、超级BOM）",
+          "销售订单直推生产订单，支持按订单制造(MTO)",
+          "多销售渠道管理，对接电商平台"
+        ]
+      },
+      {
+        "genericModuleId": "inventory-management",
+        "vendorModuleName": "库存管理",
+        "vendorSubModules": ["入库管理", "出库管理", "调拨管理", "盘点管理", "库存预警", "条码/RFID管理"],
+        "vendorSpecificFeatures": [
+          "智能库存预警与自动补货建议",
+          "PDA高效采集工序作业结果，报工效率提升100%+",
+          "批号追溯和序列号管理深度支持",
+          "多仓库跨组织调拨协同"
+        ]
+      },
+      {
+        "genericModuleId": "interorg-settlement",
+        "vendorModuleName": "多组织结算",
+        "vendorSubModules": ["组织间采购", "组织间销售", "组织间调拨", "内部转移定价", "跨境结算"],
+        "vendorSpecificFeatures": [
+          "多法人、多工厂间业务自动结算",
+          "跨境财税合规结算（支持越南、泰国等本地服务包）",
+          "内部交易抵消与合并报表自动处理"
+        ]
+      },
+      {
+        "genericModuleId": "production-management",
+        "vendorModuleName": "生产管理",
+        "vendorSubModules": ["BOM管理", "工艺路线", "生产订单", "MPS/MRP", "APS高级排程", "生产领料", "生产报工", "委外加工", "车间管理"],
+        "vendorSpecificFeatures": [
+          "APS高级排程系统：基于实时设备状态与订单优先级算法，实现分钟级计划调整，设备利用率提升23%，交付周期缩短18%",
+          "N+X滚动计划 + 日生产看板拉动供应商协同",
+          "配置BOM与超级BOM支持个性化定制生产",
+          "生成式智能工艺规划：零件特征识别+大模型融合，替代人工工艺设计，效率提升300%+",
+          "MRP自动生成采购申请和生产订单",
+          "车间PDA报工，实时跟踪完工进度",
+          "项目化制造一体化贯通"
+        ]
+      },
+      {
+        "genericModuleId": "quality-management",
+        "vendorModuleName": "质量管理",
+        "vendorSubModules": ["来料检验IQC", "过程检验IPQC", "成品检验FQC/OQC", "检验方案", "不合格品处理", "质量追溯"],
+        "vendorSpecificFeatures": [
+          "全流程质量追溯（从原料到成品）",
+          "检验结果与采购入库、生产入库联动",
+          "质量数据实时统计与预警"
+        ]
+      },
+      {
+        "genericModuleId": "supplier-collaboration",
+        "vendorModuleName": "供应商协同",
+        "vendorSubModules": ["供应商门户", "订单协同", "交货协同", "库存协同", "对账协同"],
+        "vendorSpecificFeatures": [
+          "供应商门户独立登录，在线确认订单和回复交期",
+          "区域供应链协同平台（原材料采购周期缩短20%案例）",
+          "VMI供应商管理库存支持",
+          "供应商交货及时率与绩效自动统计"
+        ]
+      },
+      {
+        "genericModuleId": "plm",
+        "vendorModuleName": "设计制造一体化",
+        "vendorSubModules": ["产品数据管理", "BOM协同", "工程变更ECN/ECO", "设计BOM转制造BOM"],
+        "vendorSpecificFeatures": [
+          "PLM与ERP数据打通，BOM导入效率提升300%+，设计周期缩短25%+",
+          "设计BOM自动转制造BOM",
+          "工程变更全流程在线协同",
+          "与智石开YonSuite研发云深度融合"
+        ]
+      },
+      {
+        "genericModuleId": "expense-reimbursement",
+        "vendorModuleName": "费控管理",
+        "vendorSubModules": ["费用申请", "差旅报销", "费用报销", "借还款"],
+        "vendorSpecificFeatures": [
+          "对接用友费控云",
+          "发票OCR识别与自动验真",
+          "费用预算控制联动"
+        ]
+      },
+      {
+        "genericModuleId": "data-analytics",
+        "vendorModuleName": "智能数据分析",
+        "vendorSubModules": ["经营驾驶舱", "多维分析报表", "移动报表", "AI预测分析"],
+        "vendorSpecificFeatures": [
+          "AI驱动的智能预警系统（库存不足自动提醒采购）",
+          "生产经营数据实时可视化看板",
+          "多维度数据分析（按产品、客户、区域、时间等）",
+          "移动审批支持管理者随时处理业务"
+        ]
+      },
+      {
+        "genericModuleId": "multi-org",
+        "vendorModuleName": "多组织管理",
+        "vendorSubModules": ["多法人管理", "多工厂协同", "多组织架构", "统一主数据", "集团报表"],
+        "vendorSpecificFeatures": [
+          "原生支持多事业部/多地点/多工厂/多法人的复杂组织架构",
+          "组织间业务流自动化（采购、销售、调拨协同）",
+          "全球化多语种、多时区、多会计准则支持",
+          "新增越南、泰国本地服务包，支持中企出海"
+        ]
+      }
+    ]
+  },
+
+  "coreCapabilities": {
+    "description": "U9 Cloud十大核心场景能力",
+    "capabilities": [
+      {
+        "name": "项目化制造",
+        "description": "按项目驱动生产全流程，项目成本精确归集，适合装备制造、工程机械等行业"
+      },
+      {
+        "name": "个性化定制",
+        "description": "超级BOM + 选配报价，支持客户个性化定制需求的高效响应"
+      },
+      {
+        "name": "智能工厂",
+        "description": "APS排程 + MES集成 + IoT设备数据采集，实现生产全过程透明化"
+      },
+      {
+        "name": "网络化协同",
+        "description": "供应商协同 + 客户协同 + 工厂间协同，构建产业链协同网络"
+      },
+      {
+        "name": "设计制造一体化",
+        "description": "PLM与ERP深度打通，设计BOM自动转制造BOM，变更全流程在线"
+      },
+      {
+        "name": "阿米巴责任考核",
+        "description": "利润中心独立核算，支持阿米巴经营管理模式"
+      },
+      {
+        "name": "多成本核算",
+        "description": "实际成本 + 标准成本并行，工单级精确核算，多维度成本分析"
+      },
+      {
+        "name": "全球化经营",
+        "description": "多语种、多币种、多税制、多会计准则，支持海外工厂和中企出海"
+      },
+      {
+        "name": "制造化服务",
+        "description": "从产品制造延伸到售后服务，支持服务型制造转型"
+      },
+      {
+        "name": "智能数据分析",
+        "description": "经营驾驶舱 + AI预警 + 多维分析，数据驱动管理决策"
+      }
+    ]
+  },
+
+  "ai2025": {
+    "description": "2025版AI能力升级",
+    "highlights": [
+      {
+        "name": "生成式智能工艺规划",
+        "description": "零件特征识别与大模型融合，替代传统人工工艺设计，效率提升300%+",
+        "model": "DeepSeek、智谱等大模型"
+      },
+      {
+        "name": "智能合同系统",
+        "description": "合同智能审核、风险预警与GPT辅助咨询，全流程效率提升50%+",
+        "model": "大模型驱动"
+      },
+      {
+        "name": "智能变更管理",
+        "description": "工程变更自动影响分析和关联更新",
+        "model": "场景化智能体"
+      },
+      {
+        "name": "智能排产",
+        "description": "基于实时设备状态和订单优先级，分钟级动态调整生产计划",
+        "model": "AI算法 + 大模型"
+      },
+      {
+        "name": "通用智能体",
+        "description": "面向制造企业典型堵点的场景化通用智能体，支持企业微调训练",
+        "model": "大模型 + 知识库"
+      }
+    ],
+    "approach": "AI生成过程由黑盒变为白盒，通过生成步骤和提示词实现结果可信可靠"
+  },
+
+  "strengths": [
+    "深耕制造业17年（2008年至今），离散制造行业经验深厚",
+    "原生支持多组织多工厂协同，复杂制造场景能力强",
+    "APS高级排程系统能力突出，设备利用率提升23%、交付周期缩短18%",
+    "2025版深度融合AI大模型，智能工艺规划效率提升300%+",
+    "全球化能力强，已新增越南、泰国本地服务包，支持中企出海",
+    "项目化制造能力成熟，适合装备制造、EPC等项目型企业",
+    "敏捷实施方法论（AGL），3-5个月快速交付，5个月内交付率63%",
+    "与用友BIP生态深度融合（营销云、费控云、采购云等）",
+    "信创适配，支持国产化部署"
+  ],
+
+  "weaknesses": [
+    "产品定位聚焦制造业，非制造行业适用性有限",
+    "实施成本较高，中大型项目投入通常40-120万+",
+    "相比金蝶云星空的PLM/ERP/MES一体化架构，U9C的一体化程度稍逊",
+    "UI和用户体验与纯SaaS产品（如YonSuite）相比有差距",
+    "增长依赖用友整体生态，独立产品创新亮点偏少",
+    "国际化能力进步明显但与SAP仍有差距"
+  ],
+
+  "pricing": {
+    "model": "项目制为主，支持订阅制",
+    "project": {
+      "standard": "15-40万（单工厂标准实施）",
+      "enterprise": "40-120万（多工厂企业级）",
+      "industry": "60-200万+（行业深度定制）",
+      "includes": "软件授权 + 实施服务 + 培训 + 定制开发",
+      "maintenance": "年维护费15-20%"
+    },
+    "subscription": {
+      "available": true,
+      "note": "支持云订阅模式，具体价格需定制报价"
+    },
+    "implementationCycle": "3-5个月快速交付（AGL敏捷实施），复杂项目6-12个月"
+  },
+
+  "targetCustomer": {
+    "scale": "中型及中大型制造企业，年收入1亿-200亿，员工200-10000人",
+    "industries": ["装备制造", "汽车零部件", "电子制造/IC设计", "机械制造", "新能源", "航空航天", "军工", "医疗器械", "食品加工"],
+    "characteristics": [
+      "离散制造业为主，有复杂的BOM和工艺路线",
+      "多工厂、多组织协同管理需求",
+      "有出海需求，海外建厂或供应链全球化",
+      "追求生产效率提升和成本精细管理",
+      "有信创或国产化替代需求",
+      "从传统ERP升级到云ERP的需求"
+    ]
+  },
+
+  "competitiveComparison": {
+    "vsKingdeeK3": {
+      "advantage": "制造业场景更深（APS排程、项目化制造）、多工厂协同能力更强、全球化能力更好（多税制多会计准则）、大型集团管控经验更丰富",
+      "disadvantage": "价格更高、PLM/ERP/MES一体化不如金蝶星空的单平台架构、UI体验略逊、SaaS模式成熟度不如星空"
+    },
+    "vsSAP": {
+      "advantage": "价格低3-5倍、实施周期短（3-5月 vs 12-18月）、中国本地化更好、信创适配、AI能力发展快",
+      "disadvantage": "大型跨国企业复杂场景不如SAP、全球化深度不足、行业最佳实践积累少于SAP"
+    },
+    "vsInspur": {
+      "advantage": "制造业深度更强、AI能力更领先、产品迭代速度快、市场化企业认可度高",
+      "disadvantage": "国央企市场和政府资源不如浪潮"
+    },
+    "vsYonSuite": {
+      "advantage": "制造业深度远超YonSuite、支持复杂BOM和APS排程、多工厂协同更成熟",
+      "disadvantage": "价格更高、SaaS体验不如YonSuite、非制造业场景覆盖不如YonSuite全面"
+    }
+  },
+
+  "ecosystem": {
+    "description": "U9 Cloud生态融合",
+    "integrations": [
+      {"name": "用友营销云", "type": "领域云", "scenario": "销售与市场管理"},
+      {"name": "用友费控云", "type": "领域云", "scenario": "费用报销与管控"},
+      {"name": "用友采购云", "type": "领域云", "scenario": "采购协同与寻源"},
+      {"name": "太迅条码", "type": "生态伙伴", "scenario": "条码与RFID数据采集"},
+      {"name": "深科特MES", "type": "生态伙伴", "scenario": "车间执行管理"},
+      {"name": "智合诚WMS", "type": "生态伙伴", "scenario": "仓储管理"}
+    ]
+  },
+
+  "upgradeStrategy": {
+    "description": "U9 Cloud升级保障",
+    "highlights": [
+      "渐进式升级架构，历史数据100%可迁移",
+      "提供6个月并行运行期",
+      "基础AI功能无需专用设备",
+      "预测性维护等高级模块建议搭配IoT传感器"
+    ]
+  }
+}

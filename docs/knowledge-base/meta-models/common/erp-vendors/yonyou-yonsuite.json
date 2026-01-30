@@ -1,0 +1,417 @@
+{
+  "meta": {
+    "id": "erp-vendor-yonyou-yonsuite",
+    "name": "用友YonSuite",
+    "parentModelId": "common-erp",
+    "vendor": "用友网络科技股份有限公司",
+    "product": "用友YonSuite（成长型企业云服务）",
+    "version": "1.0.0",
+    "updatedAt": "2026-01-28",
+    "freshness": {
+      "createdAt": "2026-01-28",
+      "lastReviewedAt": "2026-01-28",
+      "nextReviewDate": "2026-07-28",
+      "confidence": "high",
+      "dataSource": "YonSuite官网、2025产品指南、公开报价信息、媒体报道"
+    }
+  },
+
+  "overview": {
+    "fullName": "用友YonSuite（成长型企业数智化商业创新平台）",
+    "latestVersion": "YonSuite 3.0（2025年）",
+    "platform": "基于用友BIP技术底座，纯公有云SaaS",
+    "positioning": "面向成长型创新企业的全场景SaaS云服务平台，是用友BIP的专业版。集财务、人力、供应链、营销、采购、制造、研发、项目、资产、协同于一体",
+    "customerBase": "1万+创新企业客户",
+    "deploymentOptions": ["纯公有云SaaS"],
+    "techStack": {
+      "architecture": "云原生、微服务架构",
+      "platform": "用友BIP iuap底座（与BIP旗舰版共享代码体系）",
+      "database": "云托管数据库",
+      "mobile": "移动端原生支持",
+      "ai": "本体智能体（Ontology-Driven Agent）架构，三层体系：大模型层(Brain)+本体引擎层(Logic)+业务应用层(Action)",
+      "lowCode": "YonBuilder低代码平台",
+      "domesticAdaptation": "公有云模式，天然适配"
+    }
+  },
+
+  "productEditions": [
+    {
+      "name": "YonSuite 标准版",
+      "target": "中小型企业（50人规模）",
+      "modules": "财务+供应链基础模块",
+      "priceRange": "8-12万元/年（50用户起）"
+    },
+    {
+      "name": "YonSuite 专业版",
+      "target": "中型成长型企业",
+      "modules": "十大领域全模块",
+      "priceRange": "15-30万元/年"
+    },
+    {
+      "name": "YonSuite 企业版",
+      "target": "中大型企业",
+      "modules": "全模块 + 高级功能 + 行业方案",
+      "priceRange": "30-60万元/年"
+    }
+  ],
+
+  "moduleMapping": {
+    "description": "用友YonSuite模块与通用ERP元模型模块的映射关系",
+    "mapping": [
+      {
+        "genericModuleId": "financial-accounting",
+        "vendorModuleName": "智能财务云",
+        "vendorSubModules": [
+          "总账",
+          "应收管理",
+          "应付管理",
+          "固定资产",
+          "出纳管理",
+          "存货核算",
+          "电子档案",
+          "税务服务"
+        ],
+        "vendorSpecificFeatures": [
+          "基于事项法会计理论，业务发生即实时记账",
+          "OCR自动识别发票 + 税局系统直联验真",
+          "自动对账功能，财务数据实时比对核对",
+          "多维度财务分析工具",
+          "电子会计档案自动归档",
+          "商旅费控一体化集成"
+        ]
+      },
+      {
+        "genericModuleId": "cost-management",
+        "vendorModuleName": "成本管理",
+        "vendorSubModules": ["产品成本核算", "费用归集", "成本分析"],
+        "vendorSpecificFeatures": [
+          "支持实际成本和标准成本核算",
+          "业财一体化自动成本归集",
+          "多维度成本报表"
+        ]
+      },
+      {
+        "genericModuleId": "management-accounting",
+        "vendorModuleName": "管理会计",
+        "vendorSubModules": ["预算管理", "利润中心", "资金管理", "税务管理"],
+        "vendorSpecificFeatures": [
+          "智能预算预测（AI驱动，新增收费点）",
+          "资金管理与银企互联",
+          "税务自动计算与申报"
+        ]
+      },
+      {
+        "genericModuleId": "procurement-management",
+        "vendorModuleName": "智能采购云",
+        "vendorSubModules": [
+          "采购申请",
+          "寻源比价",
+          "采购订单",
+          "采购入库",
+          "合同管理",
+          "对账支付"
+        ],
+        "vendorSpecificFeatures": [
+          "全流程在线化：寻源比价、合同管理、订单协同、对账支付",
+          "供应商协同平台在线协作",
+          "采购预算控制与审批流"
+        ]
+      },
+      {
+        "genericModuleId": "sales-management",
+        "vendorModuleName": "数字营销云",
+        "vendorSubModules": [
+          "CRM",
+          "全渠道营销",
+          "会员管理",
+          "零售电商",
+          "销售订单",
+          "销售发货"
+        ],
+        "vendorSpecificFeatures": [
+          "整合CRM、全渠道营销、会员管理、零售电商",
+          "智能化精准获客与客户全生命周期管理",
+          "线上线下全渠道销售统一管理"
+        ]
+      },
+      {
+        "genericModuleId": "inventory-management",
+        "vendorModuleName": "敏捷供应链云-库存",
+        "vendorSubModules": [
+          "入库管理",
+          "出库管理",
+          "调拨管理",
+          "盘点管理",
+          "库存预警"
+        ],
+        "vendorSpecificFeatures": [
+          "敏捷供应链一体化（研发-销售-计划-采购-生产-仓储物流-运维服务）",
+          "实时监控与智能预测，预测潜在风险",
+          "多语言、多时区支持"
+        ]
+      },
+      {
+        "genericModuleId": "interorg-settlement",
+        "vendorModuleName": "组织间结算",
+        "vendorSubModules": ["组织间交易", "内部结算"],
+        "vendorSpecificFeatures": ["多组织业务协同", "内部交易自动结算"]
+      },
+      {
+        "genericModuleId": "production-management",
+        "vendorModuleName": "智能制造云",
+        "vendorSubModules": [
+          "BOM管理",
+          "生产计划",
+          "生产管理",
+          "车间管理",
+          "委外管理"
+        ],
+        "vendorSpecificFeatures": [
+          "个性化定制、超级BOM、选配报价",
+          "一体化贯通项目管理及成本管理",
+          "生产制造向服务经营转型支持",
+          "支持离散制造和轻量流程制造"
+        ]
+      },
+      {
+        "genericModuleId": "quality-management",
+        "vendorModuleName": "质量管理",
+        "vendorSubModules": ["来料检验", "过程检验", "成品检验", "质量追溯"],
+        "vendorSpecificFeatures": [
+          "质量检验与生产/采购流程联动",
+          "质量数据统计分析"
+        ]
+      },
+      {
+        "genericModuleId": "supplier-collaboration",
+        "vendorModuleName": "供应商协同",
+        "vendorSubModules": ["供应商门户", "订单协同", "交货协同"],
+        "vendorSpecificFeatures": ["供应商在线协同平台", "透明化供应商管理"]
+      },
+      {
+        "genericModuleId": "plm",
+        "vendorModuleName": "研发创新云",
+        "vendorSubModules": [
+          "基础文档管理",
+          "产品数据标准化",
+          "研发过程标准化",
+          "协同创新"
+        ],
+        "vendorSpecificFeatures": [
+          "2025年3月新发布智石开YonSuite研发云",
+          "设计制造一体化、变更协同、个性化定制三大核心能力",
+          "AI融合：智能知识库（友智库）、项目管理助手、设计机器人",
+          "工程师效率提升约50%，设计错误减少70%"
+        ]
+      },
+      {
+        "genericModuleId": "expense-reimbursement",
+        "vendorModuleName": "商旅费控",
+        "vendorSubModules": ["费用申请", "差旅管理", "费用报销", "借还款"],
+        "vendorSpecificFeatures": [
+          "商旅预订与报销一体化",
+          "发票OCR + 自动验真",
+          "预算控制联动"
+        ]
+      },
+      {
+        "genericModuleId": "data-analytics",
+        "vendorModuleName": "数据服务云",
+        "vendorSubModules": [
+          "数据集成",
+          "数据治理",
+          "数据分析",
+          "数据应用",
+          "社会化数据"
+        ],
+        "vendorSpecificFeatures": [
+          "一站式数据服务（集成-治理-分析-应用）",
+          "场景模型驱动的数据分析",
+          "经营驾驶舱与移动报表"
+        ]
+      },
+      {
+        "genericModuleId": "multi-org",
+        "vendorModuleName": "多组织管理",
+        "vendorSubModules": ["组织架构", "分级授权", "主数据管理"],
+        "vendorSpecificFeatures": [
+          "支持多组织管理，适配集团化扩展",
+          "企业成长后可无缝升级到BIP旗舰版",
+          "统一主数据管理"
+        ]
+      }
+    ]
+  },
+
+  "tenDomains": {
+    "description": "YonSuite十大全场景SaaS服务领域",
+    "domains": [
+      {
+        "name": "智能财务",
+        "description": "财务会计、管理会计、税务服务、资金管理、商旅费控、电子档案"
+      },
+      {
+        "name": "数字人力",
+        "description": "人才供应链，选用育留、入转调离全生命周期，智能助理和数智员工"
+      },
+      {
+        "name": "敏捷供应链",
+        "description": "从研发到销售到运维的一体化供应链管理"
+      },
+      {
+        "name": "数字营销",
+        "description": "CRM、全渠道营销、会员管理、零售电商"
+      },
+      {
+        "name": "智能采购",
+        "description": "寻源比价、合同管理、订单协同、对账支付"
+      },
+      {
+        "name": "智能制造",
+        "description": "生产计划、车间管理、委外管理、个性化定制"
+      },
+      {
+        "name": "研发创新",
+        "description": "文档管理、产品数据标准化、研发过程管理、协同创新"
+      },
+      {
+        "name": "智慧协同",
+        "description": "沟通协作、办公协同、业务协同、数智服务"
+      },
+      { "name": "项目管理", "description": "项目全生命周期管理，PMO实时掌控" },
+      {
+        "name": "数据服务",
+        "description": "数据集成、治理、分析、应用一站式服务"
+      }
+    ]
+  },
+
+  "ai2025": {
+    "description": "YonSuite本体智能体架构（2025年）",
+    "architecture": {
+      "name": "本体智能体（Ontology-Driven Agent）",
+      "description": "从'概率性文本生成'向'逻辑化业务执行'的范式升级",
+      "layers": [
+        {
+          "name": "大模型层（Brain）",
+          "description": "自研YonGPT-Ontology + 生态合作（豆包、通义千问等多大模型服务）"
+        },
+        {
+          "name": "本体引擎层（Logic）",
+          "description": "20+行业、1000+业务场景知识沉淀，可视化规则配置引擎和数据治理模块"
+        },
+        {
+          "name": "业务应用层（Action）",
+          "description": "即插即用的业务组件（财务助理、供应链指挥官等），像搭积木一样灵活组装"
+        }
+      ]
+    },
+    "highlights": [
+      "智能财务：OCR发票识别 + 税局直联 + 自动对账",
+      "数字人力：智能助理自动化考勤管理、薪资核算",
+      "敏捷供应链：实时监控 + 智能预测 + 风险预警",
+      "研发创新：友智库智能知识库 + 项目管理助手 + 设计机器人"
+    ]
+  },
+
+  "strengths": [
+    "纯公有云SaaS，无需本地部署和运维，持续在线升级",
+    "十大领域全场景覆盖，一个平台解决财务、人力、供应链、营销等全部需求",
+    "与BIP旗舰版共享代码体系，企业成长后可无缝升级",
+    "订阅制收费，降低初期投入门槛（较本地部署降低60%硬件成本）",
+    "本体智能体架构，AI能力持续进化",
+    "快速上线，标准化实施周期短",
+    "1万+创新企业客户案例",
+    "消费品、制造、服务、医药等行业实践丰富"
+  ],
+
+  "weaknesses": [
+    "纯公有云部署，无法满足数据本地化存储需求",
+    "复杂制造场景（如高级排程APS）不如U9 Cloud深入",
+    "大型集团管控能力不如BIP旗舰版",
+    "混合云部署比金蝶云星辰贵10-15%",
+    "部分高级AI功能为增值收费项",
+    "定制化空间受限于SaaS标准化",
+    "标准模块价格偏高（如总账基础3500元/年，逐项累加费用不低）"
+  ],
+
+  "pricing": {
+    "model": "SaaS年费订阅制",
+    "editions": {
+      "standard": {
+        "range": "8-12万元/年（50用户规模）",
+        "note": "基础财务+供应链模块"
+      },
+      "professional": {
+        "range": "15-30万元/年",
+        "note": "全模块开放"
+      },
+      "enterprise": {
+        "range": "30-60万元/年",
+        "note": "全模块+高级功能+行业方案"
+      }
+    },
+    "moduleExamples": {
+      "财务会计总账基础": "3,500元/年",
+      "固定资产模块": "2,000元/年",
+      "应收管理模块": "2,000元/年"
+    },
+    "additionalCosts": {
+      "dataMigration": "3-8万元（旧系统数据导入）",
+      "customAPI": "5,000元起/次（标准API对接）",
+      "implementation": "按项目另计"
+    },
+    "discount": "200+用户时单价下降40%，季度促销可免实施费",
+    "tcoComparison": "500人以上企业3年TCO比金蝶云星辰低18-22%"
+  },
+
+  "targetCustomer": {
+    "scale": "成长型中型企业，年收入3000万-30亿，员工50-2000人",
+    "industries": [
+      "消费品",
+      "制造业（中等复杂度）",
+      "现代服务业",
+      "医药",
+      "高科技",
+      "批发零售",
+      "建筑工程"
+    ],
+    "characteristics": [
+      "处于快速成长期，业务规模扩张",
+      "需要一站式全场景管理平台",
+      "偏好SaaS模式，不想自建IT基础设施",
+      "预算相对有限，关注性价比和投入产出比",
+      "对AI和数字化转型有需求",
+      "未来可能成长为大型企业，需要系统可升级"
+    ]
+  },
+
+  "competitiveComparison": {
+    "vsKingdeeK3": {
+      "advantage": "全场景覆盖更广（十大领域 vs 金蝶主要聚焦ERP+PLM+MES）、AI架构更前沿（本体智能体）、可无缝升级到BIP旗舰版",
+      "disadvantage": "制造业深度不如金蝶星空（PLM/ERP/MES一体化）、价格略高、纯公有云限制灵活性"
+    },
+    "vsU9Cloud": {
+      "advantage": "全场景覆盖广、SaaS模式轻量快速、价格门槛低、非制造业场景更丰富",
+      "disadvantage": "制造业深度远不如U9C、无APS排程、多工厂协同能力弱、复杂BOM支持有限"
+    },
+    "vsBIP": {
+      "advantage": "价格低、上线快、适合中型企业、共享同一代码可无缝升级",
+      "disadvantage": "集团管控弱、全球化能力有限、定制化空间小"
+    },
+    "vsChangjietong": {
+      "advantage": "功能更全面、覆盖领域更广、适合更大规模企业",
+      "disadvantage": "价格更高、小微企业性价比不如畅捷通"
+    }
+  },
+
+  "upgradeStrategy": {
+    "description": "YonSuite与BIP产品家族的升级路径",
+    "path": "YonSuite（成长型中型企业）→ BIP旗舰版（大型企业）→ BIP超级版（超大型集团）",
+    "highlights": [
+      "共享同一研发团队和代码体系",
+      "数据和配置可平滑迁移",
+      "无需更换系统，一套平台伴随企业成长"
+    ]
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "meta": {
+    "id": "crm-vendor-neocrm",
+    "name": "销售易 Neocrm",
+    "parentModelId": "common-crm",
+    "vendor": "北京仁科互动网络技术有限公司（腾讯控股）",
+    "product": "销售易 Neocrm · 企业级CRM / NeoAgent智能CRM",
+    "version": "1.0.0",
+    "updatedAt": "2026-01-28",
+    "freshness": {
+      "createdAt": "2026-01-28",
+      "lastReviewedAt": "2026-01-28",
+      "nextReviewDate": "2026-07-28",
+      "confidence": "high",
+      "dataSource": "销售易官网、Gartner SFA魔力象限报告、公开媒体报道、产品文档"
+    }
+  },
+
+  "overview": {
+    "fullName": "销售易 Neocrm（NeoAgent智能CRM）",
+    "latestVersion": "NeoAgent（2025年）",
+    "platform": "Neo-Platform PaaS平台（元数据框架、零代码/低代码/高代码）",
+    "positioning": "腾讯控股的企业级CRM领导品牌，连续9年入选Gartner SFA魔力象限（唯一入选的中国厂商），融合AI、大数据、物联网等新型互联网技术，打造营销服一体化CRM平台",
+    "customerBase": "5000+中大型企业客户，覆盖制造、医疗、消费品等20+行业",
+    "deploymentOptions": ["公有云SaaS", "私有部署", "混合云"],
+    "techStack": {
+      "architecture": "SaaS云原生，Neo-Platform PaaS平台支撑",
+      "platform": "Neo-Platform（零代码/低代码/高代码三种开发模式）",
+      "database": "北京/上海双活数据中心，符合GDPR/PIPL合规",
+      "mobile": "移动端原生支持（iOS/Android）",
+      "ai": "NeoAgent平台（2025年），应用腾讯混元+DeepSeek开源模型多模解决方案，六大智能体",
+      "integration": "深度集成企业微信、腾讯会议、腾讯乐享等腾讯生态",
+      "domesticAdaptation": "国产化，多语言/多地域/多币种国际化能力"
+    }
+  },
+
+  "strategicPartnership": {
+    "description": "腾讯与销售易战略合作（2025年2月升级）",
+    "highlights": [
+      "腾讯控股（持股约53%）",
+      "腾讯集团副总裁李强兼任销售易董事长",
+      "销售易创始人史彦泽继续担任CEO",
+      "腾讯全面开放云计算、AI、大数据等核心技术",
+      "深度整合企业微信、腾讯会议、腾讯云等生态资源"
+    ],
+    "investmentHistory": "自2017年起腾讯对销售易进行多轮投资"
+  },
+
+  "productEditions": [
+    {
+      "name": "专业版",
+      "target": "小型团队，基础销售CRM",
+      "modules": "基础销售CRM管理及数据分析",
+      "priceRange": "90元/人/月（≥5人起购）",
+      "annualPrice": "1,080元/人/年"
+    },
+    {
+      "name": "企业版",
+      "target": "中型企业，功能完整",
+      "modules": "功能完整的销售CRM管理，适用于任何规模团队",
+      "priceRange": "180元/人/月（≥10人起购）",
+      "annualPrice": "2,160元/人/年"
+    },
+    {
+      "name": "旗舰版",
+      "target": "大型企业，深度定制",
+      "modules": "可根据业务深度自定义的智能销售CRM管理",
+      "priceRange": "联系销售咨询（≥10人）",
+      "annualPrice": "约4,000-6,000元/人/年（估算）"
+    },
+    {
+      "name": "无限版",
+      "target": "超大型企业，无限扩展",
+      "modules": "无限扩展定制的智能销售CRM管理",
+      "priceRange": "联系销售咨询（≥10人）",
+      "annualPrice": "定制报价"
+    }
+  ],
+
+  "cloudProducts": {
+    "description": "销售易七大云产品线",
+    "products": [
+      {
+        "name": "销售云",
+        "description": "由线索到回款，全过程自动化、智能化的闭环管理",
+        "features": ["线索管理", "客户管理", "商机管理", "报价与合同", "多维目标管理", "智能区域管理", "CPQ复杂产品配置与报价", "嵌入式数据分析"],
+        "pricing": "专业版90元/人/月，企业版180元/人/月"
+      },
+      {
+        "name": "营销云",
+        "description": "以CDP为基础的客户数据平台，实现品牌与消费者的超级连接",
+        "features": ["流量运营", "营销自动化", "消费者洞察", "体验管理", "忠诚管理", "CDP客户数据平台"],
+        "pricing": "基于营销线索另报价"
+      },
+      {
+        "name": "伙伴云",
+        "description": "个性化的合作伙伴管理平台，企业与渠道伙伴协同",
+        "features": ["渠道伙伴管理", "小程序应用", "伙伴协作", "渠道赋能"],
+        "pricing": "企业版180元/人/月，旗舰版360元/人/月"
+      },
+      {
+        "name": "客户服务云",
+        "description": "全方位服务接受到客户问题的闭环管理",
+        "features": ["统一客户服务工作台", "可视化工单管理", "多渠道服务接入", "智能化数据分析"],
+        "pricing": "企业版180元/人/月"
+      },
+      {
+        "name": "现场服务云",
+        "description": "项目交付、售后维修现场数字化运营管理",
+        "features": ["全过程项目交付", "全渠道服务接受", "现场服务管理", "售后维修管理"],
+        "pricing": "企业版180元/人/月"
+      },
+      {
+        "name": "智能分析云",
+        "description": "与CRM原生一体的敏捷自助、嵌入式、实时数据分析工具",
+        "features": ["可视化报告定制", "实时数据分析", "嵌入式BI", "自助式报表"],
+        "pricing": "包含在CRM版本中"
+      },
+      {
+        "name": "电商云",
+        "description": "企业级电商平台（2021年发布）",
+        "features": ["B2B电商", "渠道订货", "在线交易"],
+        "pricing": "定制报价"
+      }
+    ]
+  },
+
+  "moduleMapping": {
+    "description": "销售易模块与通用CRM元模型模块的映射关系",
+    "mapping": [
+      {
+        "genericModuleId": "customer-mgmt",
+        "vendorModuleName": "客户管理",
+        "vendorSubModules": ["客户档案", "联系人管理", "客户分类", "客户画像360度", "客户公海"],
+        "vendorSpecificFeatures": [
+          "360°全生命周期客户关系管理",
+          "客户健康度AI评估",
+          "企业微信客户数据同步",
+          "客户组织架构与决策链分析",
+          "toB+toC双模式客户管理"
+        ]
+      },
+      {
+        "genericModuleId": "leads-mgmt",
+        "vendorModuleName": "线索管理",
+        "vendorSubModules": ["线索获取", "线索分配", "线索评分", "线索培育", "线索转化"],
+        "vendorSpecificFeatures": [
+          "AI智能线索评分与优先级排序",
+          "多渠道线索汇入（官网、广告、企微、活动）",
+          "线索培育自动化流程",
+          "营销Agent以客找客：基于已成交客户画像智能发现相似潜客"
+        ]
+      },
+      {
+        "genericModuleId": "opportunity-mgmt",
+        "vendorModuleName": "商机管理",
+        "vendorSubModules": ["商机创建", "销售阶段管理", "销售漏斗", "赢率预测", "竞对分析"],
+        "vendorSpecificFeatures": [
+          "可视化销售漏斗与阶段推进",
+          "AI商机健康度评估",
+          "销售经理Agent：智能识别目标差距，定位高风险商机",
+          "商机协作：多角色协同跟进",
+          "智能预测销售额"
+        ]
+      },
+      {
+        "genericModuleId": "activity-mgmt",
+        "vendorModuleName": "销售活动",
+        "vendorSubModules": ["拜访管理", "电话记录", "日程任务", "会议记录", "邮件同步"],
+        "vendorSpecificFeatures": [
+          "销售助理Agent：语音录入自动生成结构化活动记录",
+          "线上会议AI自动生成会议纪要",
+          "邮件、在线会议内容自动同步至CRM",
+          "集成企业微信、腾讯会议等主流沟通渠道"
+        ]
+      },
+      {
+        "genericModuleId": "quote-contract",
+        "vendorModuleName": "CPQ报价与合同",
+        "vendorSubModules": ["CPQ配置报价", "报价审批", "合同管理", "回款管理", "订单管理"],
+        "vendorSpecificFeatures": [
+          "CPQ（配置-定价-报价）：支持复杂产品配置与报价",
+          "LTC线索到回款全流程闭环",
+          "合同生命周期管理",
+          "回款计划与跟踪",
+          "与ERP系统集成"
+        ]
+      },
+      {
+        "genericModuleId": "service-mgmt",
+        "vendorModuleName": "客户服务云+现场服务云",
+        "vendorSubModules": ["多渠道服务接入", "工单管理", "现场服务", "项目交付", "SLA管理"],
+        "vendorSpecificFeatures": [
+          "统一客户服务工作台",
+          "客服Agent：智能应答、质检、工单辅助",
+          "现场服务数字化（工程师派工、上门服务）",
+          "全过程项目交付管理",
+          "智能质检直接给出分数，定位服务问题",
+          "根据客户需求自动创建工单，智能匹配解决方案"
+        ]
+      },
+      {
+        "genericModuleId": "analytics",
+        "vendorModuleName": "智能分析云",
+        "vendorSubModules": ["销售仪表盘", "销售漏斗分析", "业绩排名", "预测分析", "自定义报表"],
+        "vendorSpecificFeatures": [
+          "分析师Agent：自然语言提问获得实时动态视图",
+          "对话即分析：管理者用自然语言查询业绩数据",
+          "嵌入式BI，与CRM原生一体",
+          "敏捷自助报表定制",
+          "多维度销售分析"
+        ]
+      },
+      {
+        "genericModuleId": "marketing",
+        "vendorModuleName": "营销云",
+        "vendorSubModules": ["CDP客户数据平台", "营销自动化", "消费者洞察", "流量运营", "忠诚管理"],
+        "vendorSpecificFeatures": [
+          "以CDP为基础的客户数据平台",
+          "营销自动化流程（邮件、短信、企微触达）",
+          "消费者洞察与体验管理",
+          "营销Agent：智能内容推荐，根据客户行业和浏览行为推荐方案",
+          "私域流量池构建（企微生态）"
+        ]
+      }
+    ]
+  },
+
+  "additionalModules": {
+    "description": "超出通用CRM元模型的销售易特色模块",
+    "modules": [
+      {
+        "id": "partner-cloud",
+        "name": "伙伴云",
+        "description": "企业与渠道合作伙伴的协同管理平台",
+        "features": [
+          "渠道伙伴全生命周期管理",
+          "小程序应用，伙伴随时访问",
+          "伙伴协作与沟通",
+          "渠道培训与赋能",
+          "伙伴业绩追踪"
+        ]
+      },
+      {
+        "id": "scrm",
+        "name": "SCRM产品（易店/易客）",
+        "description": "基于企业微信构建的社交化CRM产品（2021年发布）",
+        "features": [
+          "易店：智慧门店数字化平台",
+          "易客：营销服一体化SCRM平台",
+          "企业微信深度集成",
+          "私域流量运营"
+        ]
+      }
+    ]
+  },
+
+  "neoAgent": {
+    "description": "NeoAgent智能CRM平台（2025年），数据驱动的新一代AI CRM",
+    "architecture": {
+      "layers": [
+        {
+          "name": "底层",
+          "description": "商用大模型（腾讯混元+DeepSeek）、机器学习平台、大模型AI Agent平台"
+        },
+        {
+          "name": "中间层",
+          "description": "NeoAI平台，以AI Agent套件为主，支持快速搭建个性化AI应用"
+        },
+        {
+          "name": "应用层",
+          "description": "覆盖CRM+AI最高频场景的AI应用（营销助手、销售助手、服务助手、管理者助手等）"
+        }
+      ]
+    },
+    "sixAgents": [
+      {
+        "name": "销售助理Agent",
+        "capability": "解放销售70%事务性工作，语音录入自动生成活动记录，线上会议自动生成纪要，智能百事通从知识库检索答案",
+        "scenario": "拜访前资料准备、拜访中实时记录、拜访后纪要生成"
+      },
+      {
+        "name": "销售经理Agent",
+        "capability": "智能识别目标差距，定位高风险商机并提供行动建议",
+        "scenario": "团队业绩监控、商机风险预警、管理决策支持"
+      },
+      {
+        "name": "销售教练Agent",
+        "capability": "基于销冠话术库构建AI陪练系统，角色扮演模拟客户异议处理，多维度即时反馈",
+        "scenario": "新人培训、销售技能提升、模拟演练"
+      },
+      {
+        "name": "分析师Agent",
+        "capability": "对话即分析，自然语言提问获得实时动态视图",
+        "scenario": "管理者业绩查询、数据分析、趋势洞察"
+      },
+      {
+        "name": "营销Agent",
+        "capability": "将存量客户数据与工商大数据融合，智能挖掘高潜客户特征，以客找客",
+        "scenario": "潜客挖掘、内容推荐、精准营销"
+      },
+      {
+        "name": "客服Agent",
+        "capability": "整合智能应答、质检、工单辅助，专业诊断准确率95%+，约30%咨询无需人工",
+        "scenario": "智能客服、工单处理、服务质检"
+      }
+    ],
+    "keyFeatures": [
+      "自然语言交互：对话即操作，让CRM成为数字协作者",
+      "可配置Agent平台：企业可灵活构建自定义Agent",
+      "全渠道互动同步：集成主流线上沟通渠道",
+      "AI评估线索/客户/商机健康度",
+      "知识自萃取：AI自动学习内部文档生成问答知识"
+    ],
+    "businessImpact": [
+      "某企业客服Agent：专业诊断准确率提升至95%+",
+      "约30%咨询无需人工介入",
+      "单季度服务成本下降20-30%"
+    ]
+  },
+
+  "industryFocus": {
+    "description": "销售易行业解决方案",
+    "industries": [
+      {
+        "name": "制造业",
+        "maturity": "成熟",
+        "solution": "复杂产品配置CPQ、经销商管理、售后服务"
+      },
+      {
+        "name": "高科技",
+        "maturity": "成熟",
+        "solution": "项目型销售、技术支持、续费管理"
+      },
+      {
+        "name": "医疗健康",
+        "maturity": "成熟",
+        "solution": "学术营销、合规管理、医疗器械售后"
+      },
+      {
+        "name": "消费品",
+        "maturity": "成熟",
+        "solution": "渠道管理、终端覆盖、消费者洞察"
+      },
+      {
+        "name": "教育",
+        "maturity": "行业方案",
+        "solution": "招生管理、学员服务、续费转化"
+      },
+      {
+        "name": "财富理财",
+        "maturity": "行业方案",
+        "solution": "客户资产管理、合规销售、服务追踪"
+      },
+      {
+        "name": "家装",
+        "maturity": "行业方案",
+        "solution": "设计方案管理、工程交付、售后服务"
+      },
+      {
+        "name": "传媒",
+        "maturity": "行业方案",
+        "solution": "广告客户管理、项目执行、效果追踪"
+      }
+    ],
+    "totalIndustries": "9个行业解决方案（相比纷享销客的14个略少）"
+  },
+
+  "strengths": [
+    "Gartner SFA魔力象限连续9年入选，唯一入选的中国CRM厂商",
+    "腾讯控股，深度整合企业微信、腾讯会议、腾讯云等生态资源",
+    "NeoAgent六大智能体覆盖营销-销售-服务全场景，AI能力获Gartner高度认可",
+    "深度销售流程管理能力强，适合复杂B2B销售场景",
+    "国际化能力成熟：多语言/多币种/多地域，海外服务器集群，支持企业出海",
+    "北京/上海双活数据中心，符合GDPR/PIPL合规要求",
+    "toB+toC双模式支持，既能管理企业客户也能连接消费者",
+    "CPQ复杂产品配置与报价能力",
+    "Neo-Platform PaaS平台支持零代码/低代码/高代码开发",
+    "500强企业客户众多，品牌影响力强"
+  ],
+
+  "weaknesses": [
+    "价格偏高（企业版2,160元/人/年），中小企业性价比不足",
+    "行业解决方案数量（9个）少于纷享销客（14个）",
+    "渠道管理能力不如纷享销客深入（无代理通/订货通类产品）",
+    "PaaS平台以高代码开发为优先，开发门槛较高，维护升级成本高",
+    "服务资源偏向超大型客户，中型企业支持力度相对不足",
+    "产品设计借鉴Salesforce模式，对中国本土产业链复杂性适配需依赖定制开发",
+    "部分行业场景需依赖第三方开发",
+    "研发和实施团队规模小于纷享销客"
+  ],
+
+  "pricing": {
+    "model": "SaaS订阅制（按人按月/年），支持私有部署",
+    "salesCloud": {
+      "professional": {"price": "90元/人/月", "annual": "1,080元/人/年", "minUsers": 5},
+      "enterprise": {"price": "180元/人/月", "annual": "2,160元/人/年", "minUsers": 10},
+      "flagship": {"price": "联系销售", "annual": "约4,000-6,000元/人/年", "minUsers": 10},
+      "unlimited": {"price": "联系销售", "annual": "定制报价", "minUsers": 10}
+    },
+    "otherClouds": {
+      "partnerCloud": "企业版180元/人/月，旗舰版360元/人/月",
+      "serviceCloud": "企业版180元/人/月",
+      "fieldServiceCloud": "企业版180元/人/月",
+      "marketingCloud": "基于线索量定制报价"
+    },
+    "purchaseNote": "付费版本12个月起售（专业版≤10人需24个月起售）",
+    "comparisonNote": "价格约为Salesforce的1/3~1/2"
+  },
+
+  "targetCustomer": {
+    "scale": "中大型企业为主，销售团队10人以上，年收入1亿-500亿",
+    "industries": ["制造业", "高科技", "医疗健康", "消费品", "教育", "金融服务", "传媒"],
+    "characteristics": [
+      "B2B复杂销售流程，需要深度销售过程管理",
+      "有国际化业务需求（多语言/多币种/海外市场）",
+      "需要与企业微信、腾讯生态深度集成",
+      "有Salesforce国产替代需求",
+      "对AI能力有较高要求",
+      "预算充足，愿意为专业CRM付费",
+      "500强企业或行业头部企业"
+    ]
+  },
+
+  "competitiveComparison": {
+    "vsSalesforce": {
+      "advantage": "价格低1/3~1/2、中国本地化好、企微生态深度集成、数据合规无出境风险、实施周期短",
+      "disadvantage": "全球化深度不如Salesforce、生态丰富度不足、行业最佳实践积累较少"
+    },
+    "vsFxiaoke": {
+      "advantage": "Gartner认可度更高（连续9年 vs 5年）、腾讯生态整合更深、深度销售流程管理更强、国际化能力更成熟",
+      "disadvantage": "渠道管理能力弱（无代理通/订货通）、行业方案数量少（9个 vs 14个）、价格更高、研发和实施团队规模较小"
+    },
+    "vsYonyouCRM": {
+      "advantage": "CRM专业度远超用友CRM、AI能力更强、产品体验更好",
+      "disadvantage": "ERP集成不如用友原生一体、央国企资源不如用友"
+    }
+  },
+
+  "gartnerRecognition": {
+    "description": "Gartner SFA魔力象限表现",
+    "highlights": [
+      "连续9年入选Gartner销售自动化（SFA）魔力象限",
+      "唯一入选的中国CRM厂商",
+      "2025年全球入选厂商从21家缩减至13家，销售易仍在列",
+      "多项指标得分超越国际CRM厂商",
+      "AI能力获Gartner高度认可",
+      "Gartner认为销售易核心竞争力：AI、协同化、全球化"
+    ]
+  },
+
+  "typicalCases": [
+    {
+      "customer": "某企业（客服Agent案例）",
+      "industry": "未披露",
+      "scenario": "智能客服",
+      "result": "专业诊断准确率提升至95%+，约30%咨询无需人工介入，单季度服务成本下降20-30%"
+    }
+  ],
+
+  "developmentHistory": [
+    {"year": "2011", "event": "销售易成立"},
+    {"year": "2017", "event": "腾讯开始投资销售易"},
+    {"year": "2020", "event": "发布全新品牌Neocrm，推出双中台型CRM"},
+    {"year": "2021", "event": "发布易店、易客SCRM产品及电商云"},
+    {"year": "2025", "event": "腾讯与销售易战略合作升级，李强兼任董事长，发布NeoAgent智能CRM"}
+  ]
+}

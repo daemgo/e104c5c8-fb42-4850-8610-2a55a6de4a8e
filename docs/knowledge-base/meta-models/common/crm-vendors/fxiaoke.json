@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "id": "crm-vendor-fxiaoke",
+    "name": "纷享销客连接型CRM",
+    "parentModelId": "common-crm",
+    "vendor": "北京易动纷享科技有限责任公司",
+    "product": "纷享销客 · 连接型CRM / ShareAI智能型CRM",
+    "version": "1.0.0",
+    "updatedAt": "2026-01-28",
+    "freshness": {
+      "createdAt": "2026-01-28",
+      "lastReviewedAt": "2026-01-28",
+      "nextReviewDate": "2026-07-28",
+      "confidence": "high",
+      "dataSource": "纷享销客官网、ShareAI产品白皮书2025版、行业分析报告、公开媒体报道、帮助中心文档"
+    }
+  },
+
+  "overview": {
+    "fullName": "纷享销客 · 连接型CRM（智能型CRM）",
+    "latestVersion": "ShareAI智能型CRM平台（2025年4月发布）",
+    "platform": "aPaaS业务定制平台 + BI智能分析平台 + 开放互联平台",
+    "positioning": "国内CRM市场占有率连续5年第一，以'连接型CRM'为独特价值定位，2025年升级为'智能型CRM'。覆盖营销获客、销售管理、订单回款、售后服务的完整LTC（线索到回款）闭环",
+    "customerBase": "6000+中大型企业客户，10万+企业用户，入选胡润全球独角兽榜单",
+    "deploymentOptions": ["公有云SaaS", "私有部署", "混合云"],
+    "techStack": {
+      "architecture": "SaaS云原生，aPaaS平台支撑",
+      "platform": "纷享PaaS（零代码/低代码/高代码三种开发模式）",
+      "database": "多租户部署（阿里云、华为云、专属云）",
+      "mobile": "移动端原生支持（iOS/Android），PDA外勤采集",
+      "ai": "ShareAI智能平台（2025年），接入DeepSeek、文心一言等国内主流大模型，九大Agent智能体",
+      "integration": "无缝集成企业微信、钉钉、ERP、HR等多异构系统",
+      "domesticAdaptation": "国产化，GDPR合规工具，24种语言支持"
+    }
+  },
+
+  "productEditions": [
+    {
+      "name": "协同版",
+      "target": "小型团队，基础协同需求",
+      "modules": "企业内部办公协同基础功能",
+      "priceRange": "300元/人/年"
+    },
+    {
+      "name": "访销版",
+      "target": "快消行业，外勤访销团队",
+      "modules": "访销管理 + 巡店 + 基础CRM",
+      "priceRange": "580元/人/年"
+    },
+    {
+      "name": "专业版",
+      "target": "中型企业，标准CRM需求",
+      "modules": "完整CRM功能（客户/线索/商机/合同/报表）",
+      "priceRange": "1,180元/人/年"
+    },
+    {
+      "name": "旗舰版",
+      "target": "中大型企业，行业化深度定制",
+      "modules": "全功能 + 行业方案 + 深度定制",
+      "priceRange": "2,180元/人/年"
+    },
+    {
+      "name": "无限版",
+      "target": "大型企业，全业务功能无限拓展",
+      "modules": "全功能 + PaaS无限扩展 + AI能力",
+      "priceRange": "4,580元/人/年"
+    }
+  ],
+
+  "moduleMapping": {
+    "description": "纷享销客模块与通用CRM元模型模块的映射关系",
+    "mapping": [
+      {
+        "genericModuleId": "customer-mgmt",
+        "vendorModuleName": "客户管理",
+        "vendorSubModules": ["客户档案", "联系人管理", "客户分类与标签", "客户画像360度", "客户公海池", "客户查重合并"],
+        "vendorSpecificFeatures": [
+          "连接型客户管理：客户数据打通企业微信/钉钉，实时同步沟通记录",
+          "客户分级分类体系（按行业、规模、价值、阶段多维度）",
+          "客户健康度评分与流失预警",
+          "客户组织架构与关系图谱（B2B决策链分析）",
+          "集团客户与子客户层级管理"
+        ]
+      },
+      {
+        "genericModuleId": "leads-mgmt",
+        "vendorModuleName": "线索管理",
+        "vendorSubModules": ["线索获取", "线索分配", "线索评分", "线索培育", "线索转化"],
+        "vendorSpecificFeatures": [
+          "多渠道线索自动汇入（官网、广告、展会、企微、内容营销）",
+          "AI智能线索评分与优先级排序",
+          "自动化线索培育流程（邮件、短信、企微触达）",
+          "线索全生命周期追踪（从获取到转化/流失）",
+          "AI一站式托管：智能化售前接待及外呼，高效完成线索清洗"
+        ]
+      },
+      {
+        "genericModuleId": "opportunity-mgmt",
+        "vendorModuleName": "商机管理",
+        "vendorSubModules": ["商机创建", "销售阶段管理", "销售漏斗", "赢率预测", "竞对分析", "商机协作"],
+        "vendorSpecificFeatures": [
+          "可视化销售漏斗与阶段推进（支持自定义阶段和推进条件）",
+          "AI销售预测（基于历史数据和行为模型的赢率预测）",
+          "项目型商机管理（适合制造业和高科技的大项目跟进）",
+          "商机协作：多角色协同跟进（销售+售前+方案+管理层）",
+          "销售教练Agent：基于SOP方法论诊断销售行为，给出改进建议"
+        ]
+      },
+      {
+        "genericModuleId": "activity-mgmt",
+        "vendorModuleName": "销售活动",
+        "vendorSubModules": ["拜访管理", "电话记录", "日程任务", "活动统计", "外勤签到", "巡店管理"],
+        "vendorSpecificFeatures": [
+          "移动端快速录入拜访和沟通记录",
+          "外勤签到与GPS定位（防作弊）",
+          "巡店访销Agent：智能排线、机会点推荐、风险防控、实时对话解析",
+          "活动数据自动关联客户和商机",
+          "拜访报告模板与AI辅助填写"
+        ]
+      },
+      {
+        "genericModuleId": "quote-contract",
+        "vendorModuleName": "CPQ报价与合同管理",
+        "vendorSubModules": ["CPQ配置报价", "报价审批", "合同管理", "回款管理", "订单管理"],
+        "vendorSpecificFeatures": [
+          "CPQ（配置-定价-报价）：支持复杂产品配置与BOM报价，适合制造业",
+          "LTC端到端流程：线索→商机→报价→订单→发货→回款完整闭环",
+          "合同执行透视化：实时把控合同进度，管控应收风险",
+          "回款与对账跟踪：合同关联订单阶段回款，自动催收提醒与应收核销",
+          "电子签章集成",
+          "与ERP系统（SAP、用友、金蝶等）双向数据交互"
+        ]
+      },
+      {
+        "genericModuleId": "service-mgmt",
+        "vendorModuleName": "售后服务（服务通）",
+        "vendorSubModules": ["多渠道服务受理", "工单管理", "现场服务", "配件管理", "设备维保", "服务评价"],
+        "vendorSpecificFeatures": [
+          "多渠道服务受理（电话、微信、网页、邮件等统一接入）",
+          "工单自动分派与智能路由",
+          "现场服务管理（工程师派工、上门服务、完工确认）",
+          "配件管理（备件库存、领用、核销）",
+          "设备维保与巡检计划（适合制造业设备管理）",
+          "7x24小时智能客服Agent：自动响应咨询，根据上下文创建工单",
+          "现场服务工程师Agent：备件推荐、解决方案推荐、维修历史知识化",
+          "IoT设备数据对接：设备运行状态与售后工单实时联动",
+          "客户满意度调查与NPS追踪"
+        ]
+      },
+      {
+        "genericModuleId": "analytics",
+        "vendorModuleName": "数据驾驶舱与BI",
+        "vendorSubModules": ["经营驾驶舱", "销售漏斗分析", "业绩排名", "客户分析", "预测分析", "自定义报表"],
+        "vendorSpecificFeatures": [
+          "数据层层穿透：从宏观到微观，按平均值、同环比、覆盖率多指标分析",
+          "智能BI Agent：自然语言查询，快速生成报表，自动解读数据并提供归因分析",
+          "多维度销售分析（按团队、区域、行业、产品线）",
+          "销售预测模型（AI驱动的收入预测）",
+          "移动端报表实时查看"
+        ]
+      },
+      {
+        "genericModuleId": "marketing",
+        "vendorModuleName": "营销管理",
+        "vendorSubModules": ["营销活动管理", "自动化营销", "内容营销", "渠道效果分析", "营销ROI"],
+        "vendorSpecificFeatures": [
+          "营销自动化流程（触发式邮件、短信、企微消息）",
+          "营销创意Agent：基于业务知识自动生成营销文案、邮件内容，SEO优化",
+          "多渠道营销效果追踪与归因分析",
+          "线索获取到转化的全链路ROI计算",
+          "与企微生态深度集成的私域营销能力"
+        ]
+      }
+    ]
+  },
+
+  "additionalModules": {
+    "description": "超出通用CRM元模型的纷享销客特色模块",
+    "modules": [
+      {
+        "id": "channel-mgmt",
+        "name": "渠道管理（代理通+订货通）",
+        "description": "企业与经销商/代理商的全链路渠道数字化管理，纷享销客的差异化核心能力",
+        "features": [
+          "招商管理：招商储备→招商运营→招商执行→招商后评估",
+          "代理通：上游企业与下游经销商的业务连接平台",
+          "订货通：经销商在线订货，7x24小时自助下单，订货效率提升50%",
+          "客户报备与联合跟进",
+          "渠道销售预测与库存协同（厂商和经销商库存互相可见）",
+          "费用管理与返利核算",
+          "门店访销管理（快消行业）",
+          "渠道培训与赋能平台",
+          "渠道健康度评估与分层管理",
+          "电子签章（快递物流成本降低80%）"
+        ]
+      },
+      {
+        "id": "enterprise-connect",
+        "name": "企业互联",
+        "description": "企业与上下游合作伙伴的在线协作平台",
+        "features": [
+          "订货及订单流转",
+          "通知下发与数据上报",
+          "培训提升与文档共享",
+          "自定义服务窗口",
+          "跨组织数据共享与协同"
+        ]
+      },
+      {
+        "id": "collaboration",
+        "name": "协同办公",
+        "description": "企业内部协同办公工具集",
+        "features": [
+          "即时沟通",
+          "办公审批",
+          "日程与任务管理",
+          "企业网盘",
+          "企业邮箱",
+          "考勤打卡",
+          "工作圈（分享社区）"
+        ]
+      }
+    ]
+  },
+
+  "shareAI": {
+    "description": "ShareAI智能型CRM平台（2025年4月发布），从连接型CRM向智能型CRM的战略跃迁",
+    "architecture": {
+      "layers": [
+        {
+          "name": "AI基础设施层",
+          "description": "接入DeepSeek、文心一言等国内主流大模型"
+        },
+        {
+          "name": "AI能力层",
+          "description": "文生图、工作台、流程编排等通用AI能力"
+        },
+        {
+          "name": "AI应用层",
+          "description": "预置的标准化智能应用 + 企业自主构建的业务智能体"
+        }
+      ]
+    },
+    "nineAgents": [
+      {
+        "name": "营销创意Agent",
+        "scenario": "营销",
+        "capability": "自动生成营销文案、邮件内容，SEO优化提升营销传播效果"
+      },
+      {
+        "name": "情报洞察Agent",
+        "scenario": "销售",
+        "capability": "客户情报实时收集与分析，发现商机信号"
+      },
+      {
+        "name": "客户互动Agent",
+        "scenario": "销售",
+        "capability": "智能化售前接待及外呼，高效线索清洗"
+      },
+      {
+        "name": "销售教练Agent",
+        "scenario": "销售",
+        "capability": "基于SOP方法论诊断销售行为，结合企业最佳实践给出改进建议"
+      },
+      {
+        "name": "智能客服Agent",
+        "scenario": "服务",
+        "capability": "7x24小时响应客户咨询，根据上下文自动创建工单"
+      },
+      {
+        "name": "现场服务工程师Agent",
+        "scenario": "服务",
+        "capability": "备件推荐、解决方案推荐、维修历史知识化"
+      },
+      {
+        "name": "巡店访销Agent",
+        "scenario": "外勤",
+        "capability": "智能排线、机会点推荐、风险防控、实时对话解析"
+      },
+      {
+        "name": "智能BI Agent",
+        "scenario": "数据分析",
+        "capability": "自然语言查询报表，自动解读数据，归因分析和行动建议"
+      },
+      {
+        "name": "知识助手Agent",
+        "scenario": "知识管理",
+        "capability": "企业知识检索从信息筛选进化为智能决策，提升服务响应精度"
+      }
+    ],
+    "agentBuilder": {
+      "description": "Agent构建器，无代码分钟级搭建自定义AI智能体",
+      "types": ["业务助手", "知识助手", "编程助手"],
+      "status": "已发布，多Agent协作功能持续迭代中"
+    },
+    "differentiators": ["双平台（aPaaS+AI平台深度整合）", "全场景（营销-销售-服务端到端）", "行业化（快消、制造等行业最佳实践知识沉淀）"]
+  },
+
+  "industryFocus": {
+    "description": "纷享销客深耕的重点行业与行业方案",
+    "industries": [
+      {
+        "name": "高科技/ICT",
+        "solution": "营-销-服一体化，LTC全流程管理，项目型销售，渠道伙伴管理",
+        "typicalCustomers": ["神州信息", "一舟股份"]
+      },
+      {
+        "name": "快消/食品饮料",
+        "solution": "访销管理，渠道管理（代理通+订货通），门店巡检，终端覆盖",
+        "typicalCustomers": ["蒙牛", "元气森林"]
+      },
+      {
+        "name": "装备制造",
+        "solution": "项目型销售管理，BOM报价/CPQ，设备维保，供应商考核",
+        "typicalCustomers": ["大族激光", "三一重工"]
+      },
+      {
+        "name": "医疗健康",
+        "solution": "学术营销，合规管理，设备售后服务",
+        "typicalCustomers": []
+      },
+      {
+        "name": "现代企业服务/SaaS",
+        "solution": "SaaS续费管理，客户成功，ARR分析",
+        "typicalCustomers": []
+      },
+      {
+        "name": "农牧农资",
+        "solution": "渠道管理，终端覆盖，拜访管理",
+        "typicalCustomers": []
+      }
+    ],
+    "totalIndustries": "16个重点行业深度布局",
+    "industryCapability": "设置行业方案中心+交付中心，快消/制造/高科技服务行业专属研发团队，北京+深圳双研发中心"
+  },
+
+  "strengths": [
+    "国内CRM市场占有率连续5年第一，6000+中大型企业客户",
+    "连接型CRM独特定位：连接企业微信/钉钉/ERP，打破系统孤岛",
+    "LTC端到端闭环：从线索获取到回款完成的完整业务链覆盖",
+    "渠道管理能力突出（代理通+订货通），适合分销型企业",
+    "ShareAI九大Agent覆盖营-销-服全场景，CAICT测评中唯一通过的CRM厂商",
+    "PaaS平台支持零代码/低代码/高代码三种模式，定制灵活",
+    "行业化深耕（16个行业），快消和制造业方案成熟",
+    "CPQ能力强，支持复杂BOM报价，适合制造业",
+    "全球化支持：24种语言、300+国家地区数据预设、多币种、GDPR合规",
+    "性价比较高，300-4580元/人/年的梯度定价",
+    "研发团队规模大（北京+深圳双中心），实施人员充足",
+    "融资超30亿，资本实力强"
+  ],
+
+  "weaknesses": [
+    "品牌影响力在大型企业市场不如Salesforce和销售易（特别是外企市场）",
+    "复杂定制化需求的售后响应速度有提升空间",
+    "高端版本（旗舰版4580元/人/年）在价格上不算低",
+    "国际市场拓展力度不如Salesforce，海外客户积累有限",
+    "部分AI Agent能力仍在迭代中（如多Agent协作尚处探索阶段）",
+    "产品功能多但学习成本存在，特别是PaaS深度定制需要技术团队配合",
+    "中小企业市场投入不足，更聚焦中大型客户"
+  ],
+
+  "pricing": {
+    "model": "SaaS订阅制（按人按年），支持私有部署和定制开发",
+    "editions": {
+      "collaborative": {"price": "300元/人/年", "note": "基础协同办公"},
+      "visit": {"price": "580元/人/年", "note": "快消行业访销版"},
+      "professional": {"price": "1,180元/人/年", "note": "标准CRM功能"},
+      "flagship": {"price": "2,180元/人/年", "note": "行业化深度定制"},
+      "unlimited": {"price": "4,580元/人/年", "note": "全功能+PaaS无限扩展+AI"}
+    },
+    "freeOption": "提供一定人数规模的免费使用",
+    "privateDeploy": "支持私有部署，价格另议",
+    "customDev": "支持定制化开发，按项目报价"
+  },
+
+  "targetCustomer": {
+    "scale": "中大型企业为主，销售团队20人以上，年收入5000万-500亿",
+    "industries": ["高科技/ICT", "快消/食品饮料", "装备制造/智能制造", "医疗健康", "现代企业服务/SaaS", "农牧农资", "教育培训"],
+    "characteristics": [
+      "B2B为主的业务模式，有明确的销售流程",
+      "需要渠道管理能力（经销商、代理商体系）",
+      "有LTC全流程管理需求（线索→商机→报价→订单→回款）",
+      "需要连接企业微信或钉钉等办公平台",
+      "业务复杂度中到高，需要PaaS定制能力",
+      "有制造业CRM需求（BOM报价、设备维保、供应链协同）",
+      "有Salesforce国产化替代需求",
+      "具备技术团队或长期数字化规划"
+    ]
+  },
+
+  "competitiveComparison": {
+    "vsSalesforce": {
+      "advantage": "价格低5-10倍、中国本地化好、企微/钉钉原生集成、数据合规无出境风险、渠道管理更适合国内分销体系、实施周期短",
+      "disadvantage": "国际市场知名度低、生态丰富度不如Salesforce、大型跨国企业复杂场景经验不足、AI平台(Einstein)更早起步"
+    },
+    "vsNeocrm": {
+      "advantage": "性价比更高、PaaS零代码/低代码门槛更低、渠道管理能力更强、行业覆盖面更广（14个行业方案）、研发和实施团队规模是销售易3-4倍",
+      "disadvantage": "大型企业深度销售流程管理不如销售易、销售易在腾讯生态的企微集成略深"
+    },
+    "vsYonyouCRM": {
+      "advantage": "CRM专业度远超用友CRM、产品体验更好、行业方案更丰富、AI能力更专业",
+      "disadvantage": "ERP集成不如用友原生一体、用友在大客户（央国企）资源更深"
+    }
+  },
+
+  "typicalCases": [
+    {
+      "customer": "蒙牛",
+      "industry": "快消/食品饮料",
+      "scenario": "渠道管理与终端覆盖",
+      "result": "订货效率提升50%，经销商7x24小时自助下单"
+    },
+    {
+      "customer": "元气森林",
+      "industry": "快消/食品饮料",
+      "scenario": "全渠道营销与销售管理",
+      "result": "数字化渠道管理落地"
+    },
+    {
+      "customer": "神州信息",
+      "industry": "高科技/ICT",
+      "scenario": "LTC全流程管理",
+      "result": "构建线索到回款的完整闭环"
+    },
+    {
+      "customer": "一舟股份",
+      "industry": "高科技",
+      "scenario": "Salesforce国产替代",
+      "result": "LTC全流程迁移，打通ERP与WMS，线索-商机-报价-订单-发货无缝衔接"
+    },
+    {
+      "customer": "大族激光",
+      "industry": "装备制造",
+      "scenario": "项目型销售+设备维保",
+      "result": "制造业CRM全流程上线"
+    },
+    {
+      "customer": "某重工装备企业",
+      "industry": "装备制造",
+      "scenario": "制造业CRM全流程",
+      "result": "订单交付周期缩短20%，售后服务响应效率提升35%，客户满意度达92%"
+    }
+  ],
+
+  "salesforceReplacement": {
+    "description": "纷享销客作为Salesforce国产替代方案的能力",
+    "highlights": [
+      "全量数据迁移工具：自动化完成基础数据与业务数据的迁移",
+      "功能对标覆盖：LTC全流程、自定义对象、工作流、审批流、报表等核心功能对标",
+      "ERP/WMS系统集成打通",
+      "平滑迁移方案，最小化业务中断",
+      "中国数据合规，无出境风险"
+    ]
+  }
+}

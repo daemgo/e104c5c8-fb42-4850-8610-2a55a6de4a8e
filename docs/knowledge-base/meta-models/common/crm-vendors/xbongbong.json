@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "id": "crm-vendor-xbongbong",
+    "name": "销帮帮CRM",
+    "parentModelId": "common-crm",
+    "vendor": "杭州逍邦网络科技有限公司",
+    "product": "销帮帮CRM · 中小企业销售管理平台",
+    "version": "1.0.0",
+    "updatedAt": "2026-01-29",
+    "freshness": {
+      "createdAt": "2026-01-29",
+      "lastReviewedAt": "2026-01-29",
+      "nextReviewDate": "2026-07-29",
+      "confidence": "high",
+      "dataSource": "销帮帮官网、钉钉开放平台、公开媒体报道、产品文档"
+    }
+  },
+
+  "overview": {
+    "fullName": "销帮帮CRM",
+    "latestVersion": "云叩低代码平台（2025年）",
+    "platform": "PaaS+低代码平台（云叩低代码）",
+    "positioning": "钉钉战略级合作伙伴，专注中小企业的数字化销售管理平台。基于PaaS+低代码模式，提供灵活可配置的CRM系统，覆盖营销获客、客户管理、销售跟进、订单回款全流程",
+    "customerBase": "40万+企业用户，覆盖各行各业中小企业和初创公司",
+    "deploymentOptions": ["SaaS云服务", "钉钉版", "企微版", "飞书版", "独立APP"],
+    "techStack": {
+      "architecture": "SaaS云原生，PaaS底层支撑",
+      "platform": "云叩低代码平台（零代码/轻量化二次开发）",
+      "database": "云端部署",
+      "mobile": "多端支持（钉钉/企微/飞书/独立APP/Web）",
+      "ai": "AI Agent方向转型中（2025年），销售助理Agent",
+      "integration": "深度集成钉钉生态，支持企微、飞书等多平台",
+      "domesticAdaptation": "国产化，中小企业友好"
+    }
+  },
+
+  "strategicPartnership": {
+    "description": "钉钉战略级合作伙伴（2016年起）",
+    "highlights": [
+      "2016年与钉钉达成战略合作",
+      "钉钉OEM合作关系（联合开发，钉钉一方品方式销售）",
+      "阿里巴巴创新中心重点投资项目",
+      "钉钉扶持的首个SaaS转型服务商案例",
+      "钉钉应用市场头部CRM产品"
+    ],
+    "investmentHistory": "2015年成立，获得融资900万+，阿里生态支持"
+  },
+
+  "productEditions": [
+    {
+      "name": "实用标准套餐",
+      "target": "初创企业，基础销售管理",
+      "modules": "基础CRM功能，客户管理、销售跟进",
+      "priceRange": "2,400元/年",
+      "userLimit": "按需配置"
+    },
+    {
+      "name": "专业高效套餐",
+      "target": "成长型企业，完整销售流程",
+      "modules": "完整销售CRM功能，流程自动化",
+      "priceRange": "5,800元/年",
+      "userLimit": "按需配置"
+    },
+    {
+      "name": "先锋全能套餐",
+      "target": "中型企业，高级功能需求",
+      "modules": "高级分析、营销自动化、进销存",
+      "priceRange": "12,800元/年",
+      "userLimit": "按需配置"
+    },
+    {
+      "name": "旗舰豪华套餐",
+      "target": "规模化企业，深度定制",
+      "modules": "全功能+定制化开发支持",
+      "priceRange": "26,800元/年",
+      "userLimit": "按需配置"
+    },
+    {
+      "name": "霸道王牌套餐",
+      "target": "大中型企业，全面解决方案",
+      "modules": "全平台能力+专属服务",
+      "priceRange": "44,800元/年",
+      "userLimit": "按需配置"
+    }
+  ],
+
+  "productModules": {
+    "description": "销帮帮核心产品模块",
+    "modules": [
+      {
+        "name": "CRM客户管理",
+        "description": "客户全生命周期管理，从线索到成交全流程",
+        "features": ["客户档案管理", "联系人管理", "客户分类标签", "客户公海池", "客户跟进记录"]
+      },
+      {
+        "name": "销售管理",
+        "description": "销售过程数字化，商机阶段可视化",
+        "features": ["商机管理", "销售漏斗", "销售阶段推进", "拜访签到", "日程任务管理"]
+      },
+      {
+        "name": "订单合同",
+        "description": "订单全流程管理，合同签署归档",
+        "features": ["订单管理", "合同管理", "报价管理", "回款跟踪", "审批流程"]
+      },
+      {
+        "name": "进销存",
+        "description": "库存管理与供应链基础功能",
+        "features": ["产品管理", "库存管理", "采购管理", "出入库管理", "库存预警"]
+      },
+      {
+        "name": "营销获客",
+        "description": "多渠道获客，线索管理",
+        "features": ["表单获客", "活动管理", "线索分配", "线索转化", "渠道追踪"]
+      },
+      {
+        "name": "数据分析",
+        "description": "智能报表与BI分析",
+        "features": ["销售仪表盘", "业绩排名", "自定义报表", "趋势分析", "数据导出"]
+      }
+    ]
+  },
+
+  "moduleMapping": {
+    "description": "销帮帮模块与通用CRM元模型模块的映射关系",
+    "mapping": [
+      {
+        "genericModuleId": "customer-mgmt",
+        "vendorModuleName": "客户管理",
+        "vendorSubModules": ["客户档案", "联系人管理", "客户分类", "客户标签", "客户公海"],
+        "vendorSpecificFeatures": [
+          "客户全生命周期管理",
+          "客户360度视图",
+          "多维度客户标签体系",
+          "客户公海池自动回收",
+          "批量导入导出"
+        ]
+      },
+      {
+        "genericModuleId": "leads-mgmt",
+        "vendorModuleName": "线索管理",
+        "vendorSubModules": ["线索获取", "线索分配", "线索跟进", "线索转化"],
+        "vendorSpecificFeatures": [
+          "表单获客自动录入",
+          "多渠道线索汇集",
+          "自动分配规则",
+          "线索转客户/商机"
+        ]
+      },
+      {
+        "genericModuleId": "opportunity-mgmt",
+        "vendorModuleName": "商机管理",
+        "vendorSubModules": ["商机创建", "销售阶段", "销售漏斗", "商机预测"],
+        "vendorSpecificFeatures": [
+          "可视化销售漏斗",
+          "阶段性任务提示",
+          "下一次联系提醒",
+          "商机金额预测"
+        ]
+      },
+      {
+        "genericModuleId": "activity-mgmt",
+        "vendorModuleName": "销售活动",
+        "vendorSubModules": ["拜访管理", "跟进记录", "日程任务", "签到打卡"],
+        "vendorSpecificFeatures": [
+          "移动端拜访签到",
+          "GPS定位打卡",
+          "跟进记录时间线",
+          "任务提醒"
+        ]
+      },
+      {
+        "genericModuleId": "quote-contract",
+        "vendorModuleName": "订单合同",
+        "vendorSubModules": ["报价管理", "订单管理", "合同管理", "回款管理"],
+        "vendorSpecificFeatures": [
+          "订单全流程管理",
+          "多级审批流程",
+          "回款计划跟踪",
+          "发票管理"
+        ]
+      },
+      {
+        "genericModuleId": "service-mgmt",
+        "vendorModuleName": "售后服务",
+        "vendorSubModules": ["工单管理", "客户反馈", "服务记录"],
+        "vendorSpecificFeatures": [
+          "售后工单创建",
+          "问题跟踪处理",
+          "服务满意度"
+        ]
+      },
+      {
+        "genericModuleId": "analytics",
+        "vendorModuleName": "数据分析",
+        "vendorSubModules": ["销售仪表盘", "业绩报表", "自定义报表", "BI分析"],
+        "vendorSpecificFeatures": [
+          "实时销售数据看板",
+          "多维度业绩分析",
+          "自定义报表生成",
+          "数据趋势图表"
+        ]
+      },
+      {
+        "genericModuleId": "marketing",
+        "vendorModuleName": "营销获客",
+        "vendorSubModules": ["表单获客", "活动管理", "渠道追踪"],
+        "vendorSpecificFeatures": [
+          "H5表单生成",
+          "活动线索收集",
+          "来源渠道分析"
+        ]
+      }
+    ]
+  },
+
+  "additionalModules": {
+    "description": "超出通用CRM元模型的销帮帮特色模块",
+    "modules": [
+      {
+        "id": "inventory-mgmt",
+        "name": "进销存",
+        "description": "库存管理与供应链基础功能，适合有实体产品的企业",
+        "features": [
+          "产品目录管理",
+          "库存数量追踪",
+          "采购入库",
+          "销售出库",
+          "库存预警",
+          "库存盘点"
+        ]
+      },
+      {
+        "id": "lowcode-platform",
+        "name": "云叩低代码平台",
+        "description": "零代码/低代码开发平台，支持快速定制应用",
+        "features": [
+          "拖拽式表单设计",
+          "自定义字段配置",
+          "工作流自动化",
+          "自定义应用搭建",
+          "API接口开放"
+        ]
+      }
+    ]
+  },
+
+  "aiCapabilities": {
+    "description": "销帮帮AI Agent能力（2025年转型中）",
+    "status": "转型中",
+    "strategy": "从传统SaaS向AI Agent方向转型，定位销售助理",
+    "currentAgents": [
+      {
+        "name": "销售助理Agent",
+        "capability": "帮助销售人员进行名片录入、售前资料录入、客户沟通记录等事务性工作",
+        "scenario": "日常销售事务自动化，解放销售精力"
+      }
+    ],
+    "futureDirection": [
+      "智能客户画像分析",
+      "销售行为建议",
+      "自动化跟进提醒",
+      "智能报表生成"
+    ],
+    "dingdingAIIntegration": "基于钉钉AI生态，探索更多AI应用场景"
+  },
+
+  "industryFocus": {
+    "description": "销帮帮行业适用性",
+    "targetIndustries": [
+      {
+        "name": "贸易批发",
+        "maturity": "成熟",
+        "solution": "客户管理+进销存一体化"
+      },
+      {
+        "name": "制造业",
+        "maturity": "成熟",
+        "solution": "销售管理+订单跟踪"
+      },
+      {
+        "name": "服务业",
+        "maturity": "成熟",
+        "solution": "客户跟进+服务工单"
+      },
+      {
+        "name": "教育培训",
+        "maturity": "行业方案",
+        "solution": "招生管理+学员跟进"
+      },
+      {
+        "name": "互联网科技",
+        "maturity": "行业方案",
+        "solution": "商机管理+续费追踪"
+      }
+    ],
+    "universalApplicability": "通用性强，适合各行业中小企业"
+  },
+
+  "strengths": [
+    "价格亲民，中小企业性价比高（2,400-44,800元/年）",
+    "钉钉战略级合作伙伴，深度整合钉钉生态",
+    "多平台支持：钉钉版、企微版、飞书版、独立APP",
+    "PaaS+低代码平台，灵活定制无需专业开发",
+    "40万+企业用户，产品成熟稳定",
+    "部署快速，SaaS模式即开即用",
+    "进销存一体化，适合有实体产品的企业",
+    "移动端体验好，拜访签到定位等功能实用",
+    "阿里生态资源支持"
+  ],
+
+  "weaknesses": [
+    "主要服务中小企业，大型企业复杂场景支持有限",
+    "AI能力正在转型中，尚不如销售易、纷享销客成熟",
+    "深度销售流程管理能力不如专业B2B CRM",
+    "行业解决方案深度不足",
+    "国际化能力弱，不支持多语言多币种",
+    "PaaS平台能力相比纷享销客、销售易还有差距",
+    "品牌影响力主要集中在中小企业市场",
+    "高端定制化项目经验相对较少"
+  ],
+
+  "pricing": {
+    "model": "SaaS订阅制（按年付费）",
+    "editions": {
+      "standard": {"name": "实用标准套餐", "price": "2,400元/年"},
+      "professional": {"name": "专业高效套餐", "price": "5,800元/年"},
+      "pioneer": {"name": "先锋全能套餐", "price": "12,800元/年"},
+      "flagship": {"name": "旗舰豪华套餐", "price": "26,800元/年"},
+      "ultimate": {"name": "霸道王牌套餐", "price": "44,800元/年"}
+    },
+    "characteristics": [
+      "按套餐定价，非按人头收费",
+      "中小企业友好的价格策略",
+      "功能逐级递增"
+    ],
+    "comparisonNote": "价格约为销售易的1/3~1/2，适合预算有限的中小企业"
+  },
+
+  "targetCustomer": {
+    "scale": "中小企业为主，销售团队5-50人，年收入500万-5亿",
+    "industries": ["贸易批发", "制造业", "服务业", "教育培训", "互联网科技", "初创企业"],
+    "characteristics": [
+      "预算有限，追求性价比",
+      "需要快速部署，即开即用",
+      "已使用钉钉/企微/飞书办公",
+      "销售流程相对标准化",
+      "需要CRM+进销存一体化",
+      "无专业IT团队，需要低代码配置",
+      "移动办公需求强"
+    ]
+  },
+
+  "competitiveComparison": {
+    "vsFxiaoke": {
+      "advantage": "价格更低、部署更快、中小企业友好、进销存一体化",
+      "disadvantage": "PaaS能力弱、大客户经验少、行业方案深度不足、AI能力差距明显"
+    },
+    "vsNeocrm": {
+      "advantage": "价格便宜1/3-1/2、中小企业门槛低、钉钉生态集成",
+      "disadvantage": "B2B复杂销售场景弱、国际化能力无、品牌影响力不足、AI Agent落后"
+    },
+    "vsWukongCRM": {
+      "advantage": "产品更成熟、钉钉生态深度集成、客户基数大",
+      "disadvantage": "开源社区支持不如悟空CRM"
+    },
+    "vsJiandaoyun": {
+      "advantage": "CRM功能更专业、销售流程管理更完善",
+      "disadvantage": "低代码平台通用性不如简道云"
+    }
+  },
+
+  "typicalCases": [
+    {
+      "customer": "南京京达生物",
+      "industry": "生物科技",
+      "scenario": "生物活性蛋白研制销售管理",
+      "result": "实现销售过程数字化管理"
+    },
+    {
+      "customer": "上海平大建筑工程管理咨询",
+      "industry": "建筑咨询",
+      "scenario": "工程项目客户管理与服务跟踪",
+      "result": "提升客户服务效率"
+    }
+  ],
+
+  "developmentHistory": [
+    {"year": "2015", "event": "销帮帮成立，杭州逍邦网络科技有限公司"},
+    {"year": "2016", "event": "与钉钉达成战略合作，成为钉钉生态核心伙伴"},
+    {"year": "2017", "event": "获得融资900万+，阿里巴巴创新中心投资"},
+    {"year": "2020", "event": "用户突破30万+，多平台版本上线"},
+    {"year": "2023", "event": "用户突破40万+，持续深耕中小企业市场"},
+    {"year": "2025", "event": "发布云叩低代码平台，向AI Agent方向转型"}
+  ],
+
+  "companyInfo": {
+    "name": "杭州逍邦网络科技有限公司",
+    "founded": "2015年",
+    "headquarters": "杭州",
+    "employees": "300+人",
+    "rdRatio": "40%+研发人员",
+    "certification": "钉钉战略级合作伙伴、阿里巴巴创新中心重点投资"
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "id": "erp-vendor-yonyou-bip5",
+    "name": "用友BIP 5",
+    "parentModelId": "common-erp",
+    "vendor": "用友网络科技股份有限公司",
+    "product": "用友BIP 5（2025年8月发布）",
+    "version": "1.0.0",
+    "updatedAt": "2026-01-28",
+    "freshness": {
+      "createdAt": "2026-01-28",
+      "lastReviewedAt": "2026-01-28",
+      "nextReviewDate": "2026-07-28",
+      "confidence": "high",
+      "dataSource": "用友官网、GBIC 2025全球商业创新大会发布资料、IDC报告、公开媒体报道"
+    }
+  },
+
+  "overview": {
+    "fullName": "用友BIP 5（商业创新平台）",
+    "latestVersion": "BIP 5（2025年8月发布）",
+    "platform": "数智底座iuap（六大平台：应用平台、数据平台、智能平台、云技术平台、开发平台、连接集成平台）",
+    "positioning": "面向大型和超大型企业集团的企业软件与智能服务平台，以'AI x 数据 x 流程'原生一体为核心优势，Gartner全球ERP SaaS市场TOP10中唯一亚太厂商",
+    "customerBase": "6.5万家大中型企业，1400+大型企业客户，覆盖全球40多个国家和地区",
+    "deploymentOptions": ["公有云", "私有云", "混合云"],
+    "techStack": {
+      "architecture": "云原生、微服务、多租户，原生一体化架构",
+      "platform": "iuap数智底座（Gartner全球高生产力aPaaS市场TOP10，亚太第一）",
+      "database": "自研超融合数据库（HTAP一栈式架构，TP+AP融合），支持千亿级数据",
+      "mobile": "全终端支持（PC、移动、平板）",
+      "ai": "企业AI一站式矩阵（智友通用智能体、超级群、友智库、智能体构建平台），接入DeepSeek、豆包、通义千问、百川等多大模型",
+      "lowCode": "YonBuilder低代码开发平台",
+      "domesticAdaptation": "全栈国产化（信创全适配）"
+    }
+  },
+
+  "productEditions": [
+    {
+      "name": "BIP 专业版（YonSuite）",
+      "target": "成长型中型企业",
+      "modules": "十大领域SaaS全场景",
+      "priceRange": "SaaS年费订阅，8-30万/年",
+      "note": "详见yonyou-yonsuite.json"
+    },
+    {
+      "name": "BIP 旗舰版",
+      "target": "大型企业、集团企业",
+      "modules": "全领域 + 集团管控 + 行业方案",
+      "priceRange": "项目制，100-500万+"
+    },
+    {
+      "name": "BIP 超级版",
+      "target": "超大型企业、央国企、跨国集团",
+      "modules": "全领域 + 全球化 + 深度定制 + 国产化替代",
+      "priceRange": "项目制，500万-数千万"
+    }
+  ],
+
+  "coreArchitecture": {
+    "description": "BIP 5 三大核心支柱 + 一个底座",
+    "pillars": [
+      {
+        "name": "企业AI",
+        "description": "一站式AI应用矩阵，将AI融入14类端到端业务流程、超2500个流程场景",
+        "components": [
+          {"name": "智友", "role": "通用智能体，员工业务伙伴"},
+          {"name": "超级群", "role": "重构协同范式，人+智能体+群的业务协同"},
+          {"name": "友智库", "role": "企业知识管理，打通大模型落地最后一公里"},
+          {"name": "数智员工", "role": "自动化处理重复性任务，提效8倍（爱尔眼科案例）"},
+          {"name": "智能体构建平台", "role": "业务人员可快速搭建智能体，多智能体协同"}
+        ]
+      },
+      {
+        "name": "企业数据云",
+        "description": "四层协同（平台层-数据层-模型层-应用层），基于私域数据构建企业自主智能",
+        "components": [
+          {"name": "超融合数据库", "role": "HTAP一栈式架构，TP+AP融合，250亿数据报表从12小时缩至45秒"},
+          {"name": "流批一体引擎", "role": "业务发生到报表可见从24小时缩至30秒"},
+          {"name": "DataAgent", "role": "AI驱动的数据智能体"},
+          {"name": "数据治理", "role": "企业级数据标准化和质量管理"}
+        ]
+      },
+      {
+        "name": "智能业务流程",
+        "description": "端到端流程覆盖十大领域，打造数智化全景解决方案",
+        "coverage": {
+          "level1": "14类一级流程",
+          "level2": "97个二级流程",
+          "level3": "547个三级流程",
+          "level4": "超2000个四级场景",
+          "examples": ["SPE战略到执行", "S2P需求到付款", "TRM资金管理", "H2R人力全流程"]
+        }
+      }
+    ],
+    "foundation": {
+      "name": "iuap数智底座",
+      "platforms": ["应用平台", "数据平台", "智能平台", "云技术平台", "开发平台", "连接集成平台"],
+      "role": "统一数据标准、安全机制和技术架构，消除应用烟囱、数据孤岛、智能碎片"
+    }
+  },
+
+  "moduleMapping": {
+    "description": "用友BIP 5模块与通用ERP元模型模块的映射关系。BIP覆盖十大业务领域，远超传统ERP范畴，此处仅映射与ERP通用模型对应的部分",
+    "mapping": [
+      {
+        "genericModuleId": "financial-accounting",
+        "vendorModuleName": "智能财务",
+        "vendorSubModules": ["总账", "应收管理", "应付管理", "固定资产", "出纳管理", "存货核算", "合并报表", "智能会计平台", "电子会计档案"],
+        "vendorSpecificFeatures": [
+          "事项法会计架构：业务事项发生即实时记账，全账簿250亿数据报表响应45秒",
+          "业财税资档一体化（2025年新发布）",
+          "多会计准则、多币种、多税制全球化财务",
+          "AI+司库：流动性管理、风险模型、智能资金调度",
+          "智能会计实时计算，业务到报表30秒可见"
+        ]
+      },
+      {
+        "genericModuleId": "cost-management",
+        "vendorModuleName": "成本管理",
+        "vendorSubModules": ["产品成本核算", "企业全成本模型", "项目成本", "多维成本分析"],
+        "vendorSpecificFeatures": [
+          "企业全成本模型（2024年发布），覆盖全价值链成本归集",
+          "基于事项会计的业财大数据成本服务",
+          "支持实际成本、标准成本、作业成本多体系并行"
+        ]
+      },
+      {
+        "genericModuleId": "management-accounting",
+        "vendorModuleName": "管理会计与司库",
+        "vendorSubModules": ["预算管理", "利润中心", "资金管理", "司库管理", "税务管理"],
+        "vendorSpecificFeatures": [
+          "司库流动性与风险模型（2024年发布）",
+          "智能预算预测（AI驱动）",
+          "集团资金池与资金调度优化"
+        ]
+      },
+      {
+        "genericModuleId": "procurement-management",
+        "vendorModuleName": "智能采购",
+        "vendorSubModules": ["采购申请", "寻源比价", "采购订单", "采购入库", "采购发票", "合同管理", "对账支付"],
+        "vendorSpecificFeatures": [
+          "S2P（需求到付款）端到端流程",
+          "AI+采购：智能寻源推荐、合同风险识别",
+          "供应链协同平台，供应商在线协作",
+          "全流程电子化，自动三单匹配"
+        ]
+      },
+      {
+        "genericModuleId": "sales-management",
+        "vendorModuleName": "数字营销与销售",
+        "vendorSubModules": ["销售订单", "CRM", "全渠道营销", "会员管理", "零售电商", "销售发货", "销售发票"],
+        "vendorSpecificFeatures": [
+          "整合CRM与ERP销售，客户全生命周期管理",
+          "全渠道营销（线上+线下统一管理）",
+          "智能化精准获客和签单策略",
+          "O2C（订单到回款）端到端流程"
+        ]
+      },
+      {
+        "genericModuleId": "inventory-management",
+        "vendorModuleName": "供应链管理-库存",
+        "vendorSubModules": ["入库管理", "出库管理", "调拨管理", "盘点管理", "库存预警"],
+        "vendorSpecificFeatures": [
+          "供应链计划与控制塔（2023年发布），全链路可视化",
+          "AI驱动的需求预测与库存优化",
+          "多组织间库存协同与调配"
+        ]
+      },
+      {
+        "genericModuleId": "interorg-settlement",
+        "vendorModuleName": "多组织结算",
+        "vendorSubModules": ["组织间交易", "转移定价", "内部对账", "合并抵消"],
+        "vendorSpecificFeatures": [
+          "全球化分层架构（2023年发布），支持跨国集团内部结算",
+          "多法人、多币种内部交易自动处理",
+          "集团合并报表自动抵消"
+        ]
+      },
+      {
+        "genericModuleId": "production-management",
+        "vendorModuleName": "智能制造",
+        "vendorSubModules": ["BOM管理", "工艺路线", "生产订单", "MPS/MRP", "生产执行", "委外管理"],
+        "vendorSpecificFeatures": [
+          "项目制造一体化（2024年发布），项目与生产深度融合",
+          "AI+供应网络计划（2025年新品），智能排产与协同",
+          "支持离散制造和流程制造",
+          "与MES深度集成，车间执行透明化"
+        ]
+      },
+      {
+        "genericModuleId": "quality-management",
+        "vendorModuleName": "质量管理",
+        "vendorSubModules": ["来料检验", "过程检验", "成品检验", "质量追溯"],
+        "vendorSpecificFeatures": [
+          "全流程质量追溯",
+          "质量数据与生产、采购联动",
+          "质量分析报表"
+        ]
+      },
+      {
+        "genericModuleId": "supplier-collaboration",
+        "vendorModuleName": "供应商协同",
+        "vendorSubModules": ["供应商门户", "订单协同", "交货协同", "对账协同"],
+        "vendorSpecificFeatures": [
+          "供应网络协同平台",
+          "AI驱动的供应商评估与推荐",
+          "供应链控制塔实时监控"
+        ]
+      },
+      {
+        "genericModuleId": "plm",
+        "vendorModuleName": "研发管理",
+        "vendorSubModules": ["产品数据管理", "研发项目管理", "BOM协同", "工程变更"],
+        "vendorSpecificFeatures": [
+          "超级版研发管理（2024年发布），研发全流程数字化",
+          "设计与制造一体化数据贯通",
+          "研发成本实时归集"
+        ]
+      },
+      {
+        "genericModuleId": "expense-reimbursement",
+        "vendorModuleName": "费用报销与商旅",
+        "vendorSubModules": ["费用申请", "差旅管理", "费用报销", "借还款", "发票管理"],
+        "vendorSpecificFeatures": [
+          "业财税资档一体化中的费控环节",
+          "发票OCR + 税务直连验真",
+          "预算控制实时联动",
+          "商旅预订与报销一体化"
+        ]
+      },
+      {
+        "genericModuleId": "data-analytics",
+        "vendorModuleName": "企业数据云与BI",
+        "vendorSubModules": ["经营驾驶舱", "自定义报表", "多维分析", "AI分析", "数据治理"],
+        "vendorSpecificFeatures": [
+          "企业数据云四层架构（平台-数据-模型-应用）",
+          "千亿级多维数据库，复杂报表秒级响应",
+          "DataAgent数据智能体，自然语言查询分析",
+          "智能大搜：跨系统智能检索与分析"
+        ]
+      },
+      {
+        "genericModuleId": "multi-org",
+        "vendorModuleName": "集团管控",
+        "vendorSubModules": ["集团组织架构", "分级授权", "统一主数据", "合并报表", "全球化管理"],
+        "vendorSpecificFeatures": [
+          "超大型集团多层级管控（总部-区域-子公司-工厂）",
+          "全球40+国家本地化（多语种、多时区、多法规）",
+          "统一主数据治理平台",
+          "一套系统伴随企业成长，无需切换升级"
+        ]
+      }
+    ]
+  },
+
+  "tenDomains": {
+    "description": "BIP 5覆盖的十大业务与管理领域（超出传统ERP范畴）",
+    "domains": [
+      {"name": "财务", "erpRelated": true},
+      {"name": "人力资源", "erpRelated": false, "note": "数字人力，人才全生命周期管理，2025年发布五大人力智能体"},
+      {"name": "供应链", "erpRelated": true},
+      {"name": "营销/销售", "erpRelated": true},
+      {"name": "采购", "erpRelated": true},
+      {"name": "制造", "erpRelated": true},
+      {"name": "研发", "erpRelated": true},
+      {"name": "项目", "erpRelated": true, "note": "项目全生命周期管理，PMO实时掌控"},
+      {"name": "资产", "erpRelated": true, "note": "资产全生命周期管理"},
+      {"name": "协同办公", "erpRelated": false, "note": "友空间统一入口，人+智能体+群协同"}
+    ]
+  },
+
+  "strengths": [
+    "全球ERP SaaS市场TOP10中唯一亚太厂商（Gartner），唯一入选HCM云和ERP云魔力象限的中国厂商",
+    "原生一体化架构，十大领域在同一平台上运行，消除数据孤岛",
+    "AI能力行业领先：'AI x 数据 x 流程'原生一体，超2500个AI场景",
+    "超融合数据库性能强：250亿数据报表12小时缩至45秒",
+    "全球化能力成熟：覆盖40+国家，服务60%海外本地客户 + 40%中企出海客户",
+    "大型企业客户基础深厚：开滦集团、贵州茅台、中免股份、万华化学、蜜雪冰城等",
+    "国产化替代能力强：全栈信创适配，央国企首选",
+    "iuap平台连续四年IDC中国aPaaS市场占有率第一",
+    "一套系统伴随企业从中型成长到超大型，无需更换"
+  ],
+
+  "weaknesses": [
+    "价格门槛高，旗舰版/超级版项目投入百万至数千万",
+    "实施周期较长，大型项目通常6-18个月",
+    "产品复杂度高，企业需要配备专业IT团队",
+    "中小企业性价比不如YonSuite或金蝶星空",
+    "部分行业方案深度不如垂直行业厂商（如鼎捷在台资制造业）",
+    "生态伙伴实施能力参差不齐"
+  ],
+
+  "pricing": {
+    "model": "订阅制 + 项目制（买断），按企业需求定制报价",
+    "subscription": {
+      "note": "主推公有云+订阅模式",
+      "range": "不公开统一价格表，需定制报价"
+    },
+    "project": {
+      "flagship": "100-500万+（大型企业旗舰版）",
+      "super": "500万-数千万（超大型企业超级版）",
+      "includes": "软件授权/订阅 + 实施服务 + 培训 + 定制开发 + 数据迁移"
+    },
+    "privateDeploy": {
+      "note": "针对巨型企业的数据安全需求，提供私有云/混合云部署",
+      "additionalCost": "基础设施 + 运维费用额外计算"
+    }
+  },
+
+  "targetCustomer": {
+    "scale": "大型至超大型企业集团，年收入10亿-万亿级，员工1000-100000+人",
+    "industries": ["制造业（离散+流程）", "能源", "建筑工程", "金融", "消费品", "医疗健康", "交通运输", "军工", "央国企"],
+    "characteristics": [
+      "集团化管控需求，多层级组织架构",
+      "全球化运营，海外分支机构管理",
+      "国产化替代需求（从SAP/Oracle迁移）",
+      "数字化转型战略明确，有AI应用落地需求",
+      "业务复杂度高，需要端到端流程覆盖",
+      "对数据安全和合规要求高（央国企、金融等）"
+    ]
+  },
+
+  "competitiveComparison": {
+    "vsSAP": {
+      "advantage": "价格更低、国产化信创适配、中国本地化更好、AI能力发展快、实施周期更短",
+      "disadvantage": "全球化深度不如SAP（SAP覆盖150+国家）、行业最佳实践积累不如SAP（40年积累）、大型跨国并购整合场景不如SAP"
+    },
+    "vsOracle": {
+      "advantage": "国产化替代首选、价格更低、中国市场服务更好、AI更前沿",
+      "disadvantage": "全球化能力和行业深度差距存在、HCM等领域Oracle Cloud更成熟"
+    },
+    "vsKingdee": {
+      "advantage": "大型企业市场经验更丰富、集团管控能力更强、全球化能力更好、数据处理规模更大",
+      "disadvantage": "中型企业市场金蝶星空更灵活、PLM/ERP/MES一体化金蝶走得更前、金蝶价格更亲民"
+    },
+    "vsInspur": {
+      "advantage": "产品技术更先进、AI能力更强、市场化企业客户更多、Gartner国际认可度高",
+      "disadvantage": "国央企政府资源不如浪潮、浪潮在部分央企行业根基更深"
+    }
+  },
+
+  "typicalCases": [
+    {
+      "customer": "中国西电集团",
+      "scenario": "国产化替代",
+      "result": "首批下属企业6个月全面实现国产化系统替代，部分子企业成本月结效率提升50%+"
+    },
+    {
+      "customer": "立高食品",
+      "scenario": "智能销售预测",
+      "result": "借助AI实现智能销售预测，优化供应链计划"
+    },
+    {
+      "customer": "爱尔眼科",
+      "scenario": "数智员工",
+      "result": "数智员工提效8倍"
+    },
+    {
+      "customer": "鞍山钢铁",
+      "scenario": "智能体应用",
+      "result": "构建20余个智能体，覆盖多个业务场景"
+    },
+    {
+      "customer": "蜜雪冰城",
+      "scenario": "全球化扩张",
+      "result": "依托BIP支撑全球化门店管理和供应链协同"
+    }
+  ]
+}

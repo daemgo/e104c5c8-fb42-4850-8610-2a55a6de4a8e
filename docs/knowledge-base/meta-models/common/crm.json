@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "id": "common-crm",
+    "name": "客户关系管理系统(CRM)",
+    "industry": "common",
+    "type": "crm",
+    "scope": "general",
+    "version": "1.0.0",
+    "updatedAt": "2026-01-27",
+    "freshness": {
+      "createdAt": "2026-01-27",
+      "lastReviewedAt": "2026-01-27",
+      "nextReviewDate": "2026-07-27",
+      "confidence": "medium"
+    },
+    "maturity": {
+      "level": "L3",
+      "description": "标准级：定义、模块、角色、流程、行业特色已完成",
+      "completeness": {
+        "definition": true,
+        "modules": true,
+        "roles": true,
+        "workflows": true,
+        "industrySpecific": false,
+        "competitors": true,
+        "differentiators": true
+      }
+    },
+    "vendorModels": {
+      "description": "厂商具体产品模型存放在 crm-vendors/ 目录下",
+      "path": "meta-models/common/crm-vendors/",
+      "vendors": ["fxiaoke", "neocrm", "xbongbong"]
+    }
+  },
+
+  "definition": {
+    "whatIs": "客户关系管理系统，帮助企业管理客户全生命周期，覆盖营销获客、销售跟进、服务支持全流程，实现以客户为中心的数字化运营",
+    "solves": [
+      "客户信息分散在个人手中，人员离职导致客户流失",
+      "销售过程不透明，管理层无法掌控商机进展",
+      "客户跟进无规范，靠个人经验，新人上手慢",
+      "营销投入产出不清，不知道哪个渠道效果好",
+      "售后服务响应慢，客户满意度低"
+    ],
+    "value": [
+      "客户资产企业化，防止人员流动导致客户流失",
+      "销售过程可视化，提升商机转化率",
+      "标准化销售方法论，缩短新人成长周期",
+      "数据驱动营销决策，提升获客效率",
+      "提升客户满意度和复购率"
+    ],
+    "positioning": "企业前端业务核心系统，连接营销、销售、服务三大环节。上游对接营销平台（广告投放、官网、社交媒体），下游对接ERP（订单、合同、回款）、售后服务系统"
+  },
+
+  "modules": [
+    {
+      "id": "customer-mgmt",
+      "name": "客户管理",
+      "description": "客户信息全景管理，包括客户档案、联系人、客户分类、客户画像、客户合并与去重",
+      "priority": "core",
+      "features": [
+        "客户档案（基本信息、行业、规模、地址）",
+        "联系人管理（多联系人、角色、关系图谱）",
+        "客户分类与标签（行业、规模、等级、来源）",
+        "客户画像（360度视图：商机、订单、服务记录汇总）",
+        "客户查重与合并",
+        "客户公海池（未跟进客户回收与再分配）"
+      ]
+    },
+    {
+      "id": "leads-mgmt",
+      "name": "线索管理",
+      "description": "营销线索的收集、分配、跟进、转化全流程管理",
+      "priority": "core",
+      "features": [
+        "线索录入（手动录入、批量导入、API对接）",
+        "线索来源追踪（渠道、活动、广告）",
+        "线索自动分配（按区域、行业、轮询规则）",
+        "线索评分（基于行为和属性的打分模型）",
+        "线索培育（自动化邮件、短信触达）",
+        "线索转化（转客户、转商机）"
+      ]
+    },
+    {
+      "id": "opportunity-mgmt",
+      "name": "商机管理",
+      "description": "销售商机全过程管理，从发现到赢单/丢单的完整跟踪",
+      "priority": "core",
+      "features": [
+        "商机创建与编辑",
+        "销售阶段管理（可自定义阶段和推进条件）",
+        "商机金额与预测",
+        "竞对记录",
+        "赢单/丢单分析",
+        "销售漏斗可视化"
+      ]
+    },
+    {
+      "id": "activity-mgmt",
+      "name": "销售活动",
+      "description": "销售人员日常活动的记录与管理，包括拜访、电话、邮件等",
+      "priority": "standard",
+      "features": [
+        "拜访记录",
+        "电话记录",
+        "邮件往来记录",
+        "日程与任务管理",
+        "活动统计与分析",
+        "移动端快速录入"
+      ]
+    },
+    {
+      "id": "quote-contract",
+      "name": "报价与合同",
+      "description": "从报价到合同签订的流程管理",
+      "priority": "standard",
+      "features": [
+        "报价单管理（产品、价格、折扣）",
+        "报价审批流程",
+        "合同管理（模板、签署、归档）",
+        "回款计划与跟踪",
+        "电子签章集成"
+      ]
+    },
+    {
+      "id": "service-mgmt",
+      "name": "客户服务",
+      "description": "售后服务与工单管理，提升客户满意度",
+      "priority": "standard",
+      "features": [
+        "服务工单创建与分配",
+        "工单处理与流转",
+        "SLA管理（服务级别协议）",
+        "知识库",
+        "客户满意度调查",
+        "服务报表"
+      ]
+    },
+    {
+      "id": "analytics",
+      "name": "数据分析",
+      "description": "销售数据的统计、分析和可视化",
+      "priority": "standard",
+      "features": [
+        "销售仪表盘（实时数据概览）",
+        "销售漏斗分析",
+        "业绩排名",
+        "客户分析（来源、行业、区域分布）",
+        "预测分析（销售额预测）",
+        "自定义报表"
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "营销管理",
+      "description": "营销活动的策划、执行和效果分析",
+      "priority": "advanced",
+      "features": [
+        "营销活动管理",
+        "邮件营销（模板、群发、追踪）",
+        "短信营销",
+        "活动ROI分析",
+        "营销自动化（触发式任务流）",
+        "渠道效果分析"
+      ]
+    }
+  ],
+
+  "roles": [
+    {
+      "name": "销售人员",
+      "description": "一线销售，负责客户开发和商机推进",
+      "keyTasks": [
+        "录入客户和商机",
+        "记录拜访和沟通",
+        "推进商机阶段",
+        "提交报价和合同"
+      ]
+    },
+    {
+      "name": "销售经理",
+      "description": "销售团队管理者，负责团队业绩和商机把控",
+      "keyTasks": ["商机审核和指导", "业绩监控", "团队管理", "销售预测"]
+    },
+    {
+      "name": "销售总监/VP",
+      "description": "高层管理者，关注整体销售战略和业绩",
+      "keyTasks": ["销售目标设定", "业绩报表查看", "大客户决策", "战略调整"]
+    },
+    {
+      "name": "市场人员",
+      "description": "负责营销获客，管理线索来源",
+      "keyTasks": ["营销活动管理", "线索录入和分配", "渠道效果分析", "内容营销"]
+    },
+    {
+      "name": "客服人员",
+      "description": "负责售后服务和客户维护",
+      "keyTasks": ["工单处理", "客户问题解决", "满意度回访", "知识库维护"]
+    },
+    {
+      "name": "系统管理员",
+      "description": "CRM系统的配置和管理",
+      "keyTasks": [
+        "用户权限管理",
+        "字段和流程配置",
+        "数据导入导出",
+        "系统集成配置"
+      ]
+    }
+  ],
+
+  "workflows": [
+    {
+      "name": "线索到商机(L2O)",
+      "description": "从营销线索到销售商机的转化流程",
+      "steps": [
+        "1. 线索获取（广告、官网、活动、转介绍等渠道）",
+        "2. 线索录入系统，自动分配到销售",
+        "3. 销售初步沟通，判断线索质量",
+        "4. 合格线索转为客户+商机",
+        "5. 不合格线索标记原因，退回公海或放弃"
+      ]
+    },
+    {
+      "name": "商机到赢单(O2C)",
+      "description": "从商机创建到最终赢单/丢单的销售推进流程",
+      "steps": [
+        "1. 商机创建，填写基本信息和预估金额",
+        "2. 需求确认阶段：深入了解客户需求",
+        "3. 方案阶段：提供解决方案和演示",
+        "4. 报价阶段：提交报价，处理议价",
+        "5. 商务谈判：合同条款确认",
+        "6. 赢单：签订合同，转交付",
+        "7. 或丢单：记录原因，总结复盘"
+      ]
+    },
+    {
+      "name": "售后服务流程",
+      "description": "客户售后问题处理流程",
+      "steps": [
+        "1. 客户提交问题（电话、在线、邮件）",
+        "2. 创建服务工单，自动分配",
+        "3. 服务人员处理问题",
+        "4. 问题解决，客户确认",
+        "5. 满意度回访",
+        "6. 工单关闭，知识库沉淀"
+      ]
+    }
+  ],
+
+  "competitors": [
+    {
+      "name": "Salesforce",
+      "vendor": "Salesforce (美国)",
+      "strengths": [
+        "全球市场份额第一",
+        "生态丰富",
+        "高度可定制",
+        "AI能力（Einstein）"
+      ],
+      "weaknesses": [
+        "价格高",
+        "中国本地化不足",
+        "实施复杂",
+        "数据出境合规风险"
+      ],
+      "priceRange": "每用户每月$25-$300",
+      "targetCustomer": "外企、大型企业"
+    },
+    {
+      "name": "纷享销客",
+      "vendor": "纷享销客 (中国)",
+      "strengths": [
+        "国产化",
+        "连接型CRM（对接企微/钉钉）",
+        "PaaS平台可扩展",
+        "制造业方案成熟"
+      ],
+      "weaknesses": ["中大型市场品牌力不足", "生态相对单薄"],
+      "priceRange": "每用户每年2000-8000元",
+      "targetCustomer": "中大型企业，制造业"
+    },
+    {
+      "name": "销售易",
+      "vendor": "销售易 (中国)",
+      "strengths": [
+        "国产Salesforce定位",
+        "B2B场景深入",
+        "腾讯投资（企微生态）"
+      ],
+      "weaknesses": ["价格偏高", "中小企业性价比低"],
+      "priceRange": "每用户每年3000-10000元",
+      "targetCustomer": "中大型B2B企业"
+    },
+    {
+      "name": "用友CRM",
+      "vendor": "用友网络",
+      "strengths": ["ERP生态集成好", "国产信创", "大客户资源"],
+      "weaknesses": ["CRM产品独立竞争力一般", "体验不如专业CRM"],
+      "priceRange": "项目制，10-100万",
+      "targetCustomer": "用友ERP老客户"
+    }
+  ],
+
+  "differentiators": [
+    {
+      "feature": "AI驱动的智能销售助手",
+      "description": "基于AI的客户画像分析、商机预测、下一步行动建议",
+      "competitiveAdvantage": "传统CRM只是记录工具，AI加持后变成销售教练"
+    },
+    {
+      "feature": "低代码可配置",
+      "description": "字段、流程、审批、报表均可通过配置完成，无需开发",
+      "competitiveAdvantage": "客户自主调整业务规则，降低后续维护成本"
+    },
+    {
+      "feature": "快速交付能力",
+      "description": "基于标准产品+配置化，交付周期可控在1-2个月",
+      "competitiveAdvantage": "相比Salesforce 3-6个月的实施周期，明显更快"
+    }
+  ],
+
+  "idealCustomer": {
+    "scale": "中型企业（100-2000人），销售团队20人以上",
+    "painPoints": [
+      "销售过程不透明，商机管理靠Excel",
+      "客户资源在销售个人手中，公司留不住",
+      "新人上手慢，没有标准销售流程",
+      "管理层看不到实时的销售数据"
+    ],
+    "budget": "10-50万（软件+实施）",
+    "decisionFactors": [
+      "功能匹配度",
+      "价格",
+      "实施周期",
+      "售后服务",
+      "本地化部署"
+    ]
+  },
+
+  "matching": {
+    "strongSignals": ["客户管理", "销售管理", "商机管理", "CRM", "客户关系"],
+    "weakSignals": ["客户信息", "销售团队", "业绩管理", "客户跟进", "销售漏斗"],
+    "antiSignals": ["纯电商", "C端消费者", "无销售团队"],
+    "confusionWith": [
+      {
+        "modelId": "common-scrm",
+        "distinction": "CRM面向B端企业客户的销售管理；SCRM面向C端/私域流量的社交化客户运营。如果客户说'私域'、'社群'、'粉丝'，用SCRM而非CRM"
+      },
+      {
+        "modelId": "common-erp",
+        "distinction": "CRM管前端（营销、销售、服务），ERP管后端（采购、生产、财务）。客户如果只提到订单和财务，可能需要ERP而非CRM"
+      }
+    ]
+  },
+
+  "relations": [
+    {
+      "targetModelId": "common-erp",
+      "relationType": "downstream",
+      "description": "CRM赢单后，订单和合同数据传递到ERP进行履约和财务处理",
+      "integrationPoints": [
+        "客户主数据同步",
+        "订单传递",
+        "合同传递",
+        "回款数据回传"
+      ]
+    },
+    {
+      "targetModelId": "common-srm",
+      "relationType": "parallel",
+      "description": "CRM管客户（卖），SRM管供应商（买），共享企业主数据",
+      "integrationPoints": ["企业主数据共享"]
+    }
+  ]
+}

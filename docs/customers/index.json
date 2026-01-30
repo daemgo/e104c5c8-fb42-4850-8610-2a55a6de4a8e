@@ -1,0 +1,27 @@
+{
+  "customers": [
+    {
+      "id": "1705712400-xiezi",
+      "companyName": "楔子科技（杭州）有限公司",
+      "shortName": "楔子科技",
+      "industry": "AI SaaS / 开发者工具",
+      "scale": "小型/初创",
+      "rating": "B+",
+      "status": "潜在客户",
+      "createdAt": "2024-01-20T00:00:00.000Z",
+      "updatedAt": "2024-01-20T00:00:00.000Z"
+    },
+    {
+      "id": "1769049195-junan",
+      "companyName": "浙江君安检测技术有限公司",
+      "shortName": "君安检测",
+      "industry": "第三方检测服务",
+      "scale": "中小型",
+      "rating": "B",
+      "status": "潜在客户",
+      "createdAt": "2025-03-21T00:00:00.000Z",
+      "updatedAt": "2025-03-21T00:00:00.000Z"
+    }
+  ],
+  "updatedAt": "2025-03-21T00:00:00.000Z"
+}

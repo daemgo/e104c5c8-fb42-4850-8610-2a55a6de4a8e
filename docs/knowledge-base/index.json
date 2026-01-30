@@ -1,0 +1,178 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-01-29",
+  "description": "SyncMind 行业知识中台 - 元模型索引",
+  "structure": {
+    "metaModels": "meta-models/",
+    "industries": "meta-models/industries/",
+    "common": "meta-models/common/"
+  },
+  "industries": [
+    {
+      "id": "manufacturing",
+      "name": "制造业",
+      "path": "meta-models/industries/manufacturing/",
+      "models": []
+    },
+    {
+      "id": "pharma",
+      "name": "医药行业",
+      "path": "meta-models/industries/pharma/",
+      "models": []
+    },
+    {
+      "id": "retail",
+      "name": "零售行业",
+      "path": "meta-models/industries/retail/",
+      "models": []
+    }
+  ],
+  "common": {
+    "path": "meta-models/common/",
+    "models": ["common-crm", "common-erp"]
+  },
+  "catalog": [
+    {
+      "id": "common-crm",
+      "name": "客户关系管理系统(CRM)",
+      "industry": "common",
+      "type": "crm",
+      "scope": "general",
+      "path": "meta-models/common/crm.json",
+      "maturity": "L3",
+      "tags": [
+        "客户管理",
+        "销售管理",
+        "商机管理",
+        "线索管理",
+        "客户服务",
+        "营销管理"
+      ],
+      "keywords": [
+        "CRM",
+        "客户关系",
+        "销售漏斗",
+        "商机",
+        "线索",
+        "报价",
+        "合同",
+        "客户公海",
+        "拜访",
+        "工单"
+      ],
+      "applicableScenarios": [
+        "客户需要管理销售团队和销售过程",
+        "客户提到客户信息分散、人员离职客户流失",
+        "客户需要商机管理和销售预测",
+        "客户希望提升销售团队效率和业绩",
+        "客户提到需要客户360度视图"
+      ],
+      "antiSignals": ["纯电商", "C端消费者", "无销售团队"],
+      "summary": "客户关系管理系统，帮助企业管理客户全生命周期，覆盖营销获客、销售跟进、服务支持全流程",
+      "vendorModels": [
+        {
+          "id": "crm-vendor-fxiaoke",
+          "name": "纷享销客连接型CRM",
+          "vendor": "纷享销客",
+          "path": "meta-models/common/crm-vendors/fxiaoke.json",
+          "product": "纷享销客 · 连接型CRM / ShareAI智能型CRM"
+        },
+        {
+          "id": "crm-vendor-neocrm",
+          "name": "销售易 Neocrm",
+          "vendor": "销售易（腾讯控股）",
+          "path": "meta-models/common/crm-vendors/neocrm.json",
+          "product": "销售易 Neocrm · NeoAgent智能CRM"
+        },
+        {
+          "id": "crm-vendor-xbongbong",
+          "name": "销帮帮CRM",
+          "vendor": "杭州逍邦网络科技有限公司",
+          "path": "meta-models/common/crm-vendors/xbongbong.json",
+          "product": "销帮帮CRM · 中小企业销售管理平台"
+        }
+      ]
+    },
+    {
+      "id": "common-erp",
+      "name": "企业资源计划系统(ERP)",
+      "industry": "common",
+      "type": "erp",
+      "scope": "general",
+      "path": "meta-models/common/erp.json",
+      "maturity": "L4",
+      "tags": [
+        "财务管理",
+        "供应链管理",
+        "生产管理",
+        "进销存",
+        "成本核算",
+        "业财一体化",
+        "多组织管控"
+      ],
+      "keywords": [
+        "ERP",
+        "企业资源计划",
+        "进销存",
+        "财务系统",
+        "业财一体",
+        "供应链",
+        "采购管理",
+        "销售管理",
+        "库存管理",
+        "生产管理",
+        "成本核算",
+        "总账",
+        "应收应付",
+        "MRP",
+        "BOM"
+      ],
+      "applicableScenarios": [
+        "客户需要整合财务和业务系统，消除数据孤岛",
+        "客户提到进销存管理、采购管理、库存管理",
+        "客户需要业财一体化，减少手工对账",
+        "客户面临多组织多法人管控需求",
+        "客户需要升级或替换老旧ERP系统",
+        "客户需要生产管理和成本核算",
+        "客户提到供应链管理、采购到付款流程"
+      ],
+      "antiSignals": [
+        "纯前端项目",
+        "纯互联网产品",
+        "个人工具",
+        "不涉及财务和业务管理"
+      ],
+      "summary": "企业资源计划系统，以财务为核心整合产供销人财物，覆盖财务会计、采购、销售、库存、生产、质量、成本核算全业务链",
+      "vendorModels": [
+        {
+          "id": "erp-vendor-kingdee-k3",
+          "name": "金蝶云·星空（AI星空）",
+          "vendor": "金蝶软件",
+          "path": "meta-models/common/erp-vendors/kingdee-k3.json",
+          "product": "金蝶云·星空 V9.1"
+        },
+        {
+          "id": "erp-vendor-yonyou-u9c",
+          "name": "用友U9 Cloud",
+          "vendor": "用友网络",
+          "path": "meta-models/common/erp-vendors/yonyou-u9c.json",
+          "product": "用友U9 Cloud 2025版"
+        },
+        {
+          "id": "erp-vendor-yonyou-bip5",
+          "name": "用友BIP 5",
+          "vendor": "用友网络",
+          "path": "meta-models/common/erp-vendors/yonyou-bip5.json",
+          "product": "用友BIP 5（2025年8月发布）"
+        },
+        {
+          "id": "erp-vendor-yonyou-yonsuite",
+          "name": "用友YonSuite",
+          "vendor": "用友网络",
+          "path": "meta-models/common/erp-vendors/yonyou-yonsuite.json",
+          "product": "用友YonSuite 3.0"
+        }
+      ]
+    }
+  ]
+}
