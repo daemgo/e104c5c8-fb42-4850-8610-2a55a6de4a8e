@@ -1,60 +1,44 @@
 {
   "profile": {
-    "companyName": "楔子科技（杭州）有限公司",
-    "industry": "AI SaaS / 开发者工具",
-    "scale": "小型/初创",
-    "rating": "B+",
+    "companyName": "腾讯控股有限公司",
+    "industry": "互联网/科技/人工智能",
+    "scale": "大型",
+    "rating": "A+",
     "tags": [
+      "互联网",
+      "科技",
       "AI",
-      "SaaS",
-      "开发者工具",
-      "低代码",
-      "原型设计",
-      "杭州",
-      "初创公司",
-      "Path B+分析"
+      "游戏",
+      "社交",
+      "云计算",
+      "金融科技",
+      "数字经济",
+      "战略客户",
+      "上市公司"
     ],
     "contacts": [
       {
+        "name": "马化腾",
+        "role": "董事会主席兼首席执行官",
+        "phone": "待补充",
+        "email": "待补充",
+        "influence": "决策者"
+      },
+      {
         "name": "待补充",
-        "role": "待补充",
-        "phone": "",
-        "email": "",
+        "role": "业务对接人",
+        "phone": "待补充",
+        "email": "待补充",
         "influence": "待评估"
       }
     ],
-    "requirements": [
-      "用户增长与获客",
-      "企业版销售能力建设",
-      "客户支持体系完善"
-    ],
-    "painPoints": [
-      "【推断】用户增长：获客成本高、免费转付费率待提升",
-      "【推断】企业销售：缺乏专业销售团队和流程",
-      "【推断】客户支持：规模增长后支持压力增加"
-    ],
+    "requirements": [],
+    "painPoints": [],
     "budget": {
-      "range": "有限（初创公司）",
-      "deliveryTime": "快速见效优先",
-      "decisionCycle": "短（创始人直接决策）",
+      "range": "待评估",
+      "deliveryTime": "待评估",
+      "decisionCycle": "待评估",
       "intentionLevel": 50
-    },
-    "product": {
-      "name": "SyncMind",
-      "website": "https://xiezi.tech",
-      "description": "AI驱动的原型开发平台，从需求到Demo 60秒内完成",
-      "features": [
-        "智能需求分析",
-        "快速方案生成",
-        "可交互Demo",
-        "多模型支持（DeepSeek、Gemini）",
-        "团队协作",
-        "代码导出"
-      ],
-      "metrics": {
-        "demosGenerated": "10,000+",
-        "userSatisfaction": "95%"
-      }
     }
   }
 }
