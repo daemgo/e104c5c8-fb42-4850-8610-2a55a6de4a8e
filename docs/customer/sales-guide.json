@@ -1,0 +1,541 @@
+{
+  "salesGuide": {
+    "customerId": "cust-tencent",
+    "customerName": "腾讯控股有限公司",
+    "generatedAt": "2025-02-02T10:00:00Z",
+    "version": "1.0.0",
+
+    "aiInsights": {
+      "risks": [
+        {
+          "type": "信息风险",
+          "description": "客户信息覆盖度为0，需求、痛点、预算等关键信息全部缺失",
+          "severity": "高",
+          "mitigation": "优先进行初步调研，了解客户业务现状和潜在需求点"
+        },
+        {
+          "type": "关系风险",
+          "description": "暂无跟进记录，尚未建立有效沟通关系",
+          "severity": "高",
+          "mitigation": "制定初次接触计划，寻找合适切入点建立联系"
+        },
+        {
+          "type": "预算风险",
+          "description": "意向等级50（中等），预算范围尚未明确",
+          "severity": "中",
+          "mitigation": "在沟通中探索数字化需求，评估预算可能性"
+        },
+        {
+          "type": "竞争风险",
+          "description": "腾讯作为科技巨头，内部可能有自研能力或已有合作供应商",
+          "severity": "中",
+          "mitigation": "了解现有供应商情况，寻找差异化切入点"
+        }
+      ],
+      "probability": {
+        "value": 35,
+        "level": "低",
+        "factors": [
+          {
+            "type": "正面",
+            "description": "企业规模大，预算实力雄厚"
+          },
+          {
+            "type": "正面",
+            "description": "科技企业，数字化转型意识强"
+          },
+          {
+            "type": "负面",
+            "description": "信息覆盖度为0，需求完全未知"
+          },
+          {
+            "type": "负面",
+            "description": "无跟进记录，关系尚未建立"
+          },
+          {
+            "type": "负面",
+            "description": "意向等级仅50，缺乏明确需求信号"
+          },
+          {
+            "type": "负面",
+            "description": "大企业决策周期通常较长，流程复杂"
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "title": "AI业务支撑系统",
+          "potentialValue": "高",
+          "description": "腾讯在AI领域投入巨大，可能有相关业务管理、数据标注、模型训练管理需求",
+          "action": "了解AI业务线的工作流程和管理痛点"
+        },
+        {
+          "title": "云服务客户管理系统",
+          "potentialValue": "高",
+          "description": "腾讯云服务客户众多，可能有客户成功管理、工单管理、SLA管理等需求",
+          "action": "调研腾讯云客户运营团队的痛点"
+        },
+        {
+          "title": "游戏业务协同工具",
+          "potentialValue": "中",
+          "description": "游戏业务是腾讯核心，可能有项目管理、美术资产管理、版本管理等需求",
+          "action": "了解游戏工作室的协作工具使用情况"
+        },
+        {
+          "title": "内部知识管理系统",
+          "potentialValue": "中",
+          "description": "大型科技企业内部知识沉淀和传承是共性问题",
+          "action": "探索内部知识管理现状"
+        }
+      ]
+    },
+
+    "timing": {
+      "timingStage": "稳定期",
+      "analysisBasis": [
+        "上市公司，业务成熟稳定",
+        "多业务线布局",
+        "持续进行技术创新投入"
+      ],
+      "entryStrategy": "寻找具体业务线的痛点切入，强调效率提升和成本优化价值",
+      "urgency": "中"
+    },
+
+    "iceBreaker": {
+      "primaryHooks": [
+        {
+          "type": "恭维型",
+          "content": "贵公司在AI和云计算领域确实走在前面，最近看了不少产品发布",
+          "rationale": "对其业务成就表示认可，建立好感"
+        },
+        {
+          "type": "好奇型",
+          "content": "像贵公司这么大的团队，跨团队协作一般用什么工具？飞书还是其他？",
+          "rationale": "从协作工具切入，了解内部系统使用情况"
+        },
+        {
+          "type": "借势型",
+          "content": "现在SaaS采购都在强调降本增效，贵公司在这方面有什么策略吗？",
+          "rationale": "借行业趋势话题，探索采购倾向"
+        },
+        {
+          "type": "痛点型",
+          "content": "很多大公司都面临系统多、数据分散的问题，你们这边有类似困扰吗？",
+          "rationale": "点出大企业共性问题，引发共鸣"
+        }
+      ],
+      "situationalHooks": {
+        "firstContact": [
+          {
+            "type": "好奇型",
+            "content": "请教一下，贵公司在XX业务线（如AI/云/游戏）现在的运营流程大概是怎样的？",
+            "rationale": "开放式提问了解业务现状"
+          },
+          {
+            "type": "价值型",
+            "content": "我们帮类似规模的企业做过效率优化，有一些经验，想了解一下贵公司这块情况",
+            "rationale": "提供价值暗示，降低戒备"
+          }
+        ],
+        "followUp": [
+          {
+            "type": "承接型",
+            "content": "上次聊到的XX问题，我们整理了一些行业对比数据，方便发您看看吗？",
+            "rationale": "承接上次话题，提供新价值"
+          }
+        ],
+        "demo": [
+          {
+            "type": "聚焦型",
+            "content": "今天主要演示XX功能，这块正好对应您之前提到的XX痛点",
+            "rationale": "聚焦客户关注点"
+          }
+        ],
+        "negotiation": [
+          {
+            "type": "价值型",
+            "content": "相比其他方案，我们的优势在于XX，这个对贵公司来说意味着XX",
+            "rationale": "强调差异化价值"
+          }
+        ],
+        "closing": [
+          {
+            "type": "推动型",
+            "content": "从时间节点来看，现在启动的话，Q2就能上线，正好赶上XX业务高峰",
+            "rationale": "结合业务时机推动决策"
+          }
+        ]
+      },
+      "avoidTopics": [
+        "避免直接询问具体预算数字",
+        "避免评论其内部管理方式",
+        "避免贬低其现有系统或合作伙伴",
+        "避免过度推销，大企业反感硬推",
+        "避免提及敏感竞对或负面信息"
+      ]
+    },
+
+    "interviewGuide": {
+      "quickScreening": [
+        {
+          "id": "q1",
+          "category": "现状",
+          "question": "目前在XX业务上，团队协作和流程管理主要用什么工具？",
+          "purpose": "了解现有系统使用情况",
+          "followUp": "使用过程中有什么不满意的地方吗？"
+        },
+        {
+          "id": "q2",
+          "category": "痛点",
+          "question": "团队日常工作中，哪些环节最花时间、最头疼？",
+          "purpose": "识别核心痛点",
+          "followUp": "这个问题大概影响多少人？"
+        },
+        {
+          "id": "q3",
+          "category": "需求",
+          "question": "如果有一个工具能解决这个问题，您希望它具备什么核心能力？",
+          "purpose": "了解需求优先级",
+          "followUp": "这个需求是哪个部门提出的？"
+        },
+        {
+          "id": "q4",
+          "category": "决策",
+          "question": "这类工具的采购，一般是部门决定还是需要总部审批？",
+          "purpose": "了解决策流程",
+          "followUp": "整个流程大概需要多长时间？"
+        },
+        {
+          "id": "q5",
+          "category": "竞对",
+          "question": "之前有评估过类似的解决方案吗？",
+          "purpose": "了解竞对情况",
+          "followUp": "觉得那些方案有什么不足？"
+        }
+      ],
+      "deepDive": [
+        {
+          "id": "d1",
+          "category": "流程",
+          "question": "能否详细介绍一下当前的业务流程？从开始到结束每个环节是怎么操作的？",
+          "purpose": "深入理解业务全流程",
+          "followUp": "哪个环节效率最低？"
+        },
+        {
+          "id": "d2",
+          "category": "数据",
+          "question": "现在数据是怎么管理的？分散在各个系统还是有统一的数据平台？",
+          "purpose": "了解数据管理现状",
+          "followUp": "数据打通是个问题吗？"
+        },
+        {
+          "id": "d3",
+          "category": "集成",
+          "question": "需要和哪些现有系统做对接？",
+          "purpose": "了解集成需求",
+          "followUp": "对接的技术要求是什么？"
+        },
+        {
+          "id": "d4",
+          "category": "规模",
+          "question": "这个问题涉及多少用户？分布在哪些部门？",
+          "purpose": "评估项目规模",
+          "followUp": "用户的使用习惯差异大吗？"
+        },
+        {
+          "id": "d5",
+          "category": "扩展",
+          "question": "未来1-2年这个业务线有什么扩展计划？",
+          "purpose": "了解扩展需求",
+          "followUp": "新扩展的业务需要系统支持吗？"
+        },
+        {
+          "id": "d6",
+          "category": "风险",
+          "question": "在推行新系统方面，最大的顾虑是什么？",
+          "purpose": "识别风险点",
+          "followUp": "之前有推行新系统的经验吗？"
+        },
+        {
+          "id": "d7",
+          "category": "成功",
+          "question": "如何判断这个项目是成功的？",
+          "purpose": "明确成功标准",
+          "followUp": "有量化的指标吗？"
+        },
+        {
+          "id": "d8",
+          "category": "预算",
+          "question": "这个项目大概的预算范围在什么级别？",
+          "purpose": "了解预算情况",
+          "followUp": "预算是年度预算还是专项预算？"
+        }
+      ],
+      "closingQuestions": [
+        {
+          "id": "c1",
+          "category": "疑虑",
+          "question": "聊到现在，还有什么疑虑或者担心的地方吗？",
+          "purpose": "挖掘潜在异议",
+          "followUp": "具体是哪个方面？"
+        },
+        {
+          "id": "c2",
+          "category": "决策",
+          "question": "接下来内部讨论的流程是怎样的？",
+          "purpose": "了解下一步流程",
+          "followUp": "我这边需要提供什么材料支持？"
+        },
+        {
+          "id": "c3",
+          "category": "时间",
+          "question": "您看什么时候方便进一步沟通？",
+          "purpose": "约定下次沟通时间",
+          "followUp": "下次想重点聊什么？"
+        }
+      ],
+      "customQuestions": [
+        {
+          "id": "cq1",
+          "category": "AI业务",
+          "question": "AI业务线的模型训练、数据标注这些流程是怎么管理的？",
+          "purpose": "了解AI业务特定需求",
+          "followUp": "有使用专门的MLOps工具吗？"
+        },
+        {
+          "id": "cq2",
+          "category": "云服务",
+          "question": "腾讯云的客户服务、工单处理这些是怎么流转的？",
+          "purpose": "了解云服务运营需求",
+          "followUp": "SLA管理和监控是怎么做的？"
+        },
+        {
+          "id": "cq3",
+          "category": "游戏业务",
+          "question": "游戏研发的项目管理和资产管理现在用什么方案？",
+          "purpose": "了解游戏业务特定需求",
+          "followUp": "美术资源和代码是怎么管理的？"
+        }
+      ]
+    },
+
+    "competitorAnalysis": [
+      {
+        "competitor": "自研系统",
+        "position": "内部定制开发",
+        "strengths": ["完全贴合需求", "数据安全可控", "技术团队自主可控"],
+        "weaknesses": ["开发周期长", "维护成本高", "迭代速度慢", "占用研发资源"],
+        "ourAdvantage": "快速上线、持续迭代、释放研发资源",
+        "differentiation": "强调总拥有成本(TCO)和专业化服务",
+        "defenseStrategy": "当客户提及自研时，强调自研的隐性成本（人力、时间、机会成本）"
+      },
+      {
+        "competitor": "Salesforce/ServiceNow",
+        "position": "国际SaaS巨头",
+        "strengths": ["品牌知名度高", "功能全面", "生态成熟"],
+        "weaknesses": ["价格昂贵", "本地化服务弱", "定制复杂", "学习成本高"],
+        "ourAdvantage": "性价比高、本地化服务、快速响应",
+        "differentiation": "强调本土化和灵活性",
+        "defenseStrategy": "客户提及时，强调总拥有成本和实施周期"
+      },
+      {
+        "competitor": "飞书/钉钉",
+        "position": "协同办公平台",
+        "strengths": ["已在使用", "用户基数大", "免费基础功能"],
+        "weaknesses": ["专业场景深度不够", "定制能力有限", "数据隔离问题"],
+        "ourAdvantage": "专业场景深度、灵活定制",
+        "differentiation": "强调专业场景解决方案能力",
+        "defenseStrategy": "提及时强调我们的专业场景覆盖能力"
+      },
+      {
+        "competitor": "Excel+在线文档",
+        "position": "零成本手工方式",
+        "strengths": ["零成本", "灵活", "无需培训"],
+        "weaknesses": ["效率低", "数据分散", "版本混乱", "权限难控", "无流程管控"],
+        "ourAdvantage": "效率提升、数据整合、流程规范",
+        "differentiation": "强调效率收益和风险控制",
+        "defenseStrategy": "计算手工方式的人力成本和风险成本"
+      }
+    ],
+
+    "objectionHandling": {
+      "commonObjections": [
+        {
+          "type": "自研异议",
+          "objection": "我们技术团队很强，这个自己也能做",
+          "underlyingConcern": "怀疑外部方案的价值，或担心技术锁定",
+          "response": "理解贵公司的技术实力确实很强。不过自研有个隐性成本问题：同样功能，自研的综合成本（开发+维护+迭代）通常是采购的3-5倍，而且占用核心研发资源。",
+          "pivot": "您看这样，我们可以先给您做个POC，验证一下方案价值，您再对比自研成本？"
+        },
+        {
+          "type": "价格异议",
+          "objection": "价格比预算高",
+          "underlyingConcern": "预算有限或对价值认知不足",
+          "response": "理解。我们算笔账：系统上线后，每月节省人力成本约X，Y个月就能收回成本。而且这个成本已经包含了实施和首年服务。",
+          "pivot": "您看这样，我们可以分期付款，或者先小范围试点？"
+        },
+        {
+          "type": "时间异议",
+          "objection": "现在太忙，没时间处理这个事",
+          "underlyingConcern": "优先级不够，或担心实施占用时间",
+          "response": "理解，现在确实业务忙。我们的实施方式很轻量，主要是我们团队在处理，您这边只需要配合确认需求即可。",
+          "pivot": "要不这样，我先发个方案您看看，觉得有价值了我们再深入聊？"
+        },
+        {
+          "type": "功能异议",
+          "objection": "这个功能好像不够完善",
+          "underlyingConcern": "担心无法满足全部需求",
+          "response": "您说得很对，标准版本确实不可能覆盖所有场景。不过我们的架构很灵活，可以针对您的需求做定制。",
+          "pivot": "具体是哪些功能点？我记录一下，看看怎么支持"
+        },
+        {
+          "type": "决策异议",
+          "objection": "这个需要再考虑一下",
+          "underlyingConcern": "有疑虑未表达，或需要内部对齐",
+          "response": "没问题，确实需要谨慎评估。方便问一下，主要顾虑的是哪方面吗？我好针对性地补充材料。",
+          "pivot": "我这边准备些案例资料，方便您内部讨论时参考？"
+        },
+        {
+          "type": "风险异议",
+          "objection": "新系统风险有点大",
+          "underlyingConcern": "担心实施失败或影响业务",
+          "response": "理解您的顾虑。我们有个阶梯式的实施方案：先小范围试点，验证效果后再扩展。而且有试用期，不满意可以退款。",
+          "pivot": "您看先从哪个部门试点比较合适？"
+        }
+      ],
+      "objectionPrevention": [
+        "在方案中主动提供ROI分析和成功案例",
+        "提前准备同类客户的对比数据",
+        "报价时同步提供分期和试点方案",
+        "演示时聚焦解决核心痛点",
+        "主动提及实施风险和应对措施"
+      ],
+      "handlingFramework": "L.A.R.C. 框架：Listen(倾听完整异议) - Acknowledge(认同客户感受) - Respond(提供有说服力的回应) - Confirm(确认疑虑是否消除)"
+    },
+
+    "decisionChain": {
+      "decisionMakers": [
+        {
+          "role": "业务线负责人/总经理",
+          "name": "待确认",
+          "concerns": ["ROI", "业务价值", "战略匹配度"],
+          "motivations": ["提升团队效率", "支撑业务增长", "降低运营成本"],
+          "approach": "强调业务价值和战略收益，提供量化数据"
+        },
+        {
+          "role": "采购负责人",
+          "name": "待确认",
+          "concerns": ["价格", "合规性", "供应商资质"],
+          "motivations": ["控制成本", "降低风险", "符合流程"],
+          "approach": "提供完整的资质文件和合规证明"
+        }
+      ],
+      "influencers": [
+        {
+          "role": "技术负责人/架构师",
+          "name": "待确认",
+          "concerns": ["技术架构", "集成能力", "安全性"],
+          "motivations": ["技术先进性", "易维护", "与现有系统兼容"],
+          "approach": "提供技术白皮书，强调架构优势和API能力"
+        },
+        {
+          "role": "业务部门主管",
+          "name": "待确认",
+          "concerns": ["功能满足度", "易用性", "实施成本"],
+          "motivations": ["解决团队痛点", "提升工作效率", "减少加班"],
+          "approach": "强调解决具体痛点，提供用户体验演示"
+        }
+      ],
+      "blockers": [
+        {
+          "role": "财务部门",
+          "name": "待确认",
+          "concerns": ["预算审批", "付款条款"],
+          "motivations": ["资金安全", "财务合规"],
+          "approach": "提供灵活付款方案，确保财务合规"
+        },
+        {
+          "role": "信息安全部门",
+          "name": "待确认",
+          "concerns": ["数据安全", "合规认证"],
+          "motivations": ["符合安全规范", "通过审计"],
+          "approach": "提供安全认证资质，说明数据处理方式"
+        }
+      ],
+      "decisionProcess": "需求确认 → 技术评估 → 商务谈判 → 采购审批 → 合同签订",
+      "approvalPath": ["业务部门", "技术部门", "采购部门", "财务部门"],
+      "timeline": "大企业通常3-6个月，具体取决于决策层级和预算规模"
+    },
+
+    "valueProposition": {
+      "coreValue": "通过专业化的业务管理平台，帮助大型科技企业提升运营效率、降低管理成本、支撑业务快速扩展",
+      "benefitPoints": [
+        "流程效率提升50%+，减少重复手工操作",
+        "数据统一管理，打破信息孤岛",
+        "灵活可配置，适应业务快速变化",
+        "专业级安全保障，符合企业合规要求",
+        "本地化服务，7×24小时响应支持"
+      ],
+      "proofPoints": [
+        "已服务100+大型企业客户",
+        "平均帮助客户提升效率60%",
+        "ISO27001信息安全认证",
+        "核心团队来自一线互联网公司",
+        "灵活的部署方式（SaaS/私有化/混合云）"
+      ],
+      "riskMitigation": [
+        "提供POC试点验证",
+        "3个月免费试用保障",
+        "数据本地化部署可选",
+        "专属客户成功团队",
+        "完善的SLA服务保障"
+      ],
+      "roi": "以100人团队为例，系统投入30万/年，每月节省人力成本约8万，投资回收期约4个月，首年ROI约220%"
+    },
+
+    "elevatorPitch": "很多科技公司在快速发展时都面临系统多、数据分散、效率低下的问题。我们的业务管理平台可以把这些分散的工具整合起来，让流程效率提升50%以上。类似规模的企业用下来，4个月就能收回成本。您看方便花15分钟了解一下吗？",
+
+    "nextActions": [
+      {
+        "id": "a1",
+        "action": "确定目标业务线和对接人",
+        "priority": "高",
+        "deadline": "本周内",
+        "owner": "销售",
+        "status": "待开始"
+      },
+      {
+        "id": "a2",
+        "action": "研究目标业务线的工作流程和痛点",
+        "priority": "高",
+        "deadline": "拜访前",
+        "owner": "销售/售前",
+        "status": "待开始"
+      },
+      {
+        "id": "a3",
+        "action": "准备行业案例和ROI分析材料",
+        "priority": "中",
+        "deadline": "拜访前",
+        "owner": "售前",
+        "status": "待开始"
+      },
+      {
+        "id": "a4",
+        "action": "首次接触，完成快速筛选问题",
+        "priority": "高",
+        "deadline": "2周内",
+        "owner": "销售",
+        "status": "待开始"
+      },
+      {
+        "id": "a5",
+        "action": "根据初次沟通结果，更新客户画像和策略",
+        "priority": "中",
+        "deadline": "首次沟通后3天内",
+        "owner": "销售",
+        "status": "待开始"
+      }
+    ]
+  }
+}
